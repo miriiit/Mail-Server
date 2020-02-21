@@ -1,6 +1,3 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
 var itemSchema = new Schema({
   id: {
     type: Number,

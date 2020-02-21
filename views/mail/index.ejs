@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="action">
+    <i id="status"></i>
+    <h1><%= title %></h1>
+    <input type="button" onClick="sendMail_Action()" value="Send Mail" />
+  </div>
+
+
+  <div class="output">
+    
+  </div>
+
+</body>
+
+<script>
+
+function sendMail_Action() {
+return fetch('localhost:4001/AOF/send/mail/', { headers: { "Content-Type": "application/json; charset=utf-8" }})
+    .then(res => res.json()) // parse response as JSON (can be res.text() for plain response)
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => {
+        console.log("u")
+        alert("sorry, there are no results for your search")
+    });
+}
+
+  function sendMail() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        document.getElementById('status').innerHTML = xmlhttp.responseText;
+      }
+    }
+    let params = {
+      "to": "azhar.hussnain@softech.com.pk",
+      "subject": "AOF",
+      "message_body": "helo hey are you"
+    };
+    xmlhttp.open("POST", "/mail/send", true);
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlhttp.send(JSON.stringify(params));
+  } 
+</script>
+
+</html>

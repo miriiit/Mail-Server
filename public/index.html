@@ -1,0 +1,2291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="Final_zafar.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.4.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<script>
+function myFunction() {
+$('input:checkbox').css('opacity', '1');
+  window.print();
+}
+</script>
+<script>
+
+function moveCursor(fromEditbox, toEditbox) 
+    {
+        // Get the count of characters in fromTextBox
+        var length = fromEditbox.value.length;
+        // Get the value of maxLength attribute from the fromTextBox
+        var maxLength = fromEditbox.getAttribute("maxLength");
+        if (length == maxLength) 
+        {
+            // If the number of charactes typed in the fromText is
+            // equal to the maxLength attribute then set focus on
+            // the next textbox
+            document.getElementById(toEditbox).focus();
+        }
+    }
+	function validate(evt) {
+  var theEvent = evt || window.event;
+
+  // Handle paste
+  if (theEvent.type === 'paste') {
+      key = event.clipboardData.getData('text/plain');
+  } else {
+  // Handle key press
+      var key = theEvent.keyCode || theEvent.which;
+      key = String.fromCharCode(key);
+  }
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+	</script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#Checkbox3").change(function()
+   {
+      if ($('#Checkbox3').is(':checked'))
+      {
+         $('#Checkbox2').prop('disabled', true);
+      }
+      if (!$('#Checkbox3').is(':checked'))
+      {
+         $('#Checkbox2').prop('disabled', false);
+      }
+   });
+   $("#Checkbox3").trigger('change');
+   $("#Checkbox16").change(function()
+   {
+      if ($('#Checkbox16').is(':checked'))
+      {
+         $('#Checkbox14').prop('disabled', true);
+         $('#Checkbox13').prop('disabled', true);
+         $('#Checkbox15').prop('disabled', true);
+         $('#Checkbox12').prop('disabled', true);
+         $('#Checkbox8').prop('disabled', true);
+      }
+      if (!$('#Checkbox16').is(':checked'))
+      {
+         $('#Checkbox14').prop('disabled', false);
+         $('#Checkbox13').prop('disabled', false);
+         $('#Checkbox15').prop('disabled', false);
+         $('#Checkbox12').prop('disabled', false);
+         $('#Checkbox8').prop('disabled', false);
+      }
+   });
+   $("#Checkbox16").trigger('change');
+   $("#Checkbox18").change(function()
+   {
+      if ($('#Checkbox18').is(':checked'))
+      {
+         $('#Checkbox20').prop('disabled', true);
+         $('#Checkbox22').prop('disabled', true);
+         $('#Checkbox21').prop('disabled', true);
+         $('#Checkbox19').prop('disabled', true);
+      }
+      if (!$('#Checkbox18').is(':checked'))
+      {
+         $('#Checkbox20').prop('disabled', false);
+         $('#Checkbox22').prop('disabled', false);
+         $('#Checkbox21').prop('disabled', false);
+         $('#Checkbox19').prop('disabled', false);
+      }
+   });
+   $("#Checkbox18").trigger('change');
+   $("#Checkbox20").change(function()
+   {
+      if ($('#Checkbox20').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', true);
+         $('#Checkbox22').prop('disabled', true);
+         $('#Checkbox21').prop('disabled', true);
+         $('#Checkbox19').prop('disabled', true);
+      }
+      if (!$('#Checkbox20').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', false);
+         $('#Checkbox22').prop('disabled', false);
+         $('#Checkbox21').prop('disabled', false);
+         $('#Checkbox19').prop('disabled', false);
+      }
+   });
+   $("#Checkbox20").trigger('change');
+   $("#Checkbox21").change(function()
+   {
+      if ($('#Checkbox21').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', true);
+         $('#Checkbox20').prop('disabled', true);
+         $('#Checkbox22').prop('disabled', true);
+         $('#Checkbox19').prop('disabled', true);
+      }
+      if (!$('#Checkbox21').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', false);
+         $('#Checkbox20').prop('disabled', false);
+         $('#Checkbox22').prop('disabled', false);
+         $('#Checkbox19').prop('disabled', false);
+      }
+   });
+   $("#Checkbox21").trigger('change');
+   $("#Checkbox22").change(function()
+   {
+      if ($('#Checkbox22').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', true);
+         $('#Checkbox20').prop('disabled', true);
+         $('#Checkbox21').prop('disabled', true);
+         $('#Checkbox19').prop('disabled', true);
+      }
+      if (!$('#Checkbox22').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', false);
+         $('#Checkbox20').prop('disabled', false);
+         $('#Checkbox21').prop('disabled', false);
+         $('#Checkbox19').prop('disabled', false);
+      }
+   });
+   $("#Checkbox22").trigger('change');
+   $("#Checkbox17").change(function()
+   {
+      if ($('#Checkbox17').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', true);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', true);
+         $('#Checkbox25').prop('disabled', true);
+      }
+      if (!$('#Checkbox17').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', false);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', false);
+         $('#Checkbox25').prop('disabled', false);
+      }
+   });
+   $("#Checkbox17").trigger('change');
+   $("#Checkbox28").change(function()
+   {
+      if ($('#Checkbox28').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', true);
+         $('#Checkbox30').prop('disabled', true);
+         $('#Checkbox33').prop('disabled', true);
+         $('#Checkbox32').prop('disabled', true);
+         $('#Checkbox31').prop('disabled', true);
+      }
+      if (!$('#Checkbox28').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', false);
+         $('#Checkbox30').prop('disabled', false);
+         $('#Checkbox33').prop('disabled', false);
+         $('#Checkbox32').prop('disabled', false);
+         $('#Checkbox31').prop('disabled', false);
+      }
+   });
+   $("#Checkbox28").trigger('change');
+   $("#Checkbox40").change(function()
+   {
+      if ($('#Checkbox40').is(':checked'))
+      {
+         $('#Checkbox41').prop('disabled', true);
+         $('#Checkbox42').prop('disabled', true);
+         $('#Checkbox43').prop('disabled', true);
+         $('#Checkbox44').prop('disabled', true);
+         $('#Checkbox45').prop('disabled', true);
+      }
+      if (!$('#Checkbox40').is(':checked'))
+      {
+         $('#Checkbox41').prop('disabled', false);
+         $('#Checkbox42').prop('disabled', false);
+         $('#Checkbox43').prop('disabled', false);
+         $('#Checkbox44').prop('disabled', false);
+         $('#Checkbox45').prop('disabled', false);
+      }
+   });
+   $("#Checkbox40").trigger('change');
+   $("#Checkbox41").change(function()
+   {
+      if ($('#Checkbox41').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', true);
+         $('#Checkbox42').prop('disabled', true);
+         $('#Checkbox43').prop('disabled', true);
+         $('#Checkbox44').prop('disabled', true);
+         $('#Checkbox45').prop('disabled', true);
+      }
+      if (!$('#Checkbox41').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', false);
+         $('#Checkbox42').prop('disabled', false);
+         $('#Checkbox43').prop('disabled', false);
+         $('#Checkbox44').prop('disabled', false);
+         $('#Checkbox45').prop('disabled', false);
+      }
+   });
+   $("#Checkbox41").trigger('change');
+   $("#Checkbox42").change(function()
+   {
+      if ($('#Checkbox42').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', true);
+         $('#Checkbox41').prop('disabled', true);
+         $('#Checkbox43').prop('disabled', true);
+         $('#Checkbox44').prop('disabled', true);
+         $('#Checkbox45').prop('disabled', true);
+      }
+      if (!$('#Checkbox42').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', false);
+         $('#Checkbox41').prop('disabled', false);
+         $('#Checkbox43').prop('disabled', false);
+         $('#Checkbox44').prop('disabled', false);
+         $('#Checkbox45').prop('disabled', false);
+      }
+   });
+   $("#Checkbox42").trigger('change');
+   $("#Checkbox43").change(function()
+   {
+      if ($('#Checkbox43').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', true);
+         $('#Checkbox41').prop('disabled', true);
+         $('#Checkbox42').prop('disabled', true);
+         $('#Checkbox44').prop('disabled', true);
+         $('#Checkbox45').prop('disabled', true);
+      }
+      if (!$('#Checkbox43').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', false);
+         $('#Checkbox41').prop('disabled', false);
+         $('#Checkbox42').prop('disabled', false);
+         $('#Checkbox44').prop('disabled', false);
+         $('#Checkbox45').prop('disabled', false);
+      }
+   });
+   $("#Checkbox43").trigger('change');
+   $("#Checkbox44").change(function()
+   {
+      if ($('#Checkbox44').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', true);
+         $('#Checkbox41').prop('disabled', true);
+         $('#Checkbox42').prop('disabled', true);
+         $('#Checkbox43').prop('disabled', true);
+         $('#Checkbox45').prop('disabled', true);
+      }
+      if (!$('#Checkbox44').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', false);
+         $('#Checkbox41').prop('disabled', false);
+         $('#Checkbox42').prop('disabled', false);
+         $('#Checkbox43').prop('disabled', false);
+         $('#Checkbox45').prop('disabled', false);
+      }
+   });
+   $("#Checkbox44").trigger('change');
+   $("#Checkbox45").change(function()
+   {
+      if ($('#Checkbox45').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', true);
+         $('#Checkbox41').prop('disabled', false);
+         $('#Checkbox42').prop('disabled', true);
+         $('#Checkbox43').prop('disabled', true);
+         $('#Checkbox44').prop('disabled', true);
+      }
+      if (!$('#Checkbox45').is(':checked'))
+      {
+         $('#Checkbox40').prop('disabled', false);
+         $('#Checkbox41').prop('disabled', false);
+         $('#Checkbox42').prop('disabled', true);
+         $('#Checkbox43').prop('disabled', false);
+         $('#Checkbox44').prop('disabled', false);
+      }
+   });
+   $("#Checkbox45").trigger('change');
+   $("#Checkbox2").change(function()
+   {
+      if ($('#Checkbox2').is(':checked'))
+      {
+         $('#Checkbox3').prop('disabled', true);
+      }
+      if (!$('#Checkbox2').is(':checked'))
+      {
+         $('#Checkbox3').prop('disabled', false);
+      }
+   });
+   $("#Checkbox2").trigger('change');
+   $("#Checkbox14").change(function()
+   {
+      if ($('#Checkbox14').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', true);
+         $('#Checkbox13').prop('disabled', true);
+         $('#Checkbox15').prop('disabled', true);
+         $('#Checkbox12').prop('disabled', true);
+         $('#Checkbox8').prop('disabled', true);
+      }
+      if (!$('#Checkbox14').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', false);
+         $('#Checkbox13').prop('disabled', false);
+         $('#Checkbox15').prop('disabled', false);
+         $('#Checkbox12').prop('disabled', false);
+         $('#Checkbox8').prop('disabled', false);
+      }
+   });
+   $("#Checkbox14").trigger('change');
+   $("#Checkbox13").change(function()
+   {
+      if ($('#Checkbox13').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', true);
+         $('#Checkbox14').prop('disabled', true);
+         $('#Checkbox15').prop('disabled', true);
+         $('#Checkbox12').prop('disabled', true);
+         $('#Checkbox8').prop('disabled', true);
+      }
+      if (!$('#Checkbox13').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', false);
+         $('#Checkbox14').prop('disabled', false);
+         $('#Checkbox15').prop('disabled', false);
+         $('#Checkbox12').prop('disabled', false);
+         $('#Checkbox8').prop('disabled', false);
+      }
+   });
+   $("#Checkbox13").trigger('change');
+   $("#Checkbox15").change(function()
+   {
+      if ($('#Checkbox15').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', true);
+         $('#Checkbox13').prop('disabled', true);
+         $('#Checkbox14').prop('disabled', true);
+         $('#Checkbox12').prop('disabled', true);
+         $('#Checkbox8').prop('disabled', true);
+      }
+      if (!$('#Checkbox15').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', false);
+         $('#Checkbox13').prop('disabled', false);
+         $('#Checkbox14').prop('disabled', false);
+         $('#Checkbox12').prop('disabled', false);
+         $('#Checkbox8').prop('disabled', false);
+      }
+   });
+   $("#Checkbox15").trigger('change');
+   $("#Checkbox12").change(function()
+   {
+      if ($('#Checkbox12').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', true);
+         $('#Checkbox13').prop('disabled', true);
+         $('#Checkbox14').prop('disabled', true);
+         $('#Checkbox15').prop('disabled', true);
+         $('#Checkbox8').prop('disabled', true);
+      }
+      if (!$('#Checkbox12').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', false);
+         $('#Checkbox13').prop('disabled', false);
+         $('#Checkbox14').prop('disabled', false);
+         $('#Checkbox15').prop('disabled', false);
+         $('#Checkbox8').prop('disabled', false);
+      }
+   });
+   $("#Checkbox12").trigger('change');
+   $("#Checkbox8").change(function()
+   {
+      if ($('#Checkbox8').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', true);
+         $('#Checkbox13').prop('disabled', true);
+         $('#Checkbox14').prop('disabled', true);
+         $('#Checkbox15').prop('disabled', true);
+         $('#Checkbox12').prop('disabled', true);
+      }
+      if (!$('#Checkbox8').is(':checked'))
+      {
+         $('#Checkbox16').prop('disabled', false);
+         $('#Checkbox13').prop('disabled', false);
+         $('#Checkbox14').prop('disabled', false);
+         $('#Checkbox15').prop('disabled', false);
+         $('#Checkbox12').prop('disabled', false);
+      }
+   });
+   $("#Checkbox8").trigger('change');
+   $("#Checkbox19").change(function()
+   {
+      if ($('#Checkbox19').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', true);
+         $('#Checkbox20').prop('disabled', true);
+         $('#Checkbox22').prop('disabled', true);
+         $('#Checkbox21').prop('disabled', true);
+      }
+      if (!$('#Checkbox19').is(':checked'))
+      {
+         $('#Checkbox18').prop('disabled', false);
+         $('#Checkbox20').prop('disabled', false);
+         $('#Checkbox22').prop('disabled', false);
+         $('#Checkbox21').prop('disabled', false);
+      }
+   });
+   $("#Checkbox19").trigger('change');
+   $("#Checkbox23").change(function()
+   {
+      if ($('#Checkbox23').is(':checked'))
+      {
+         $('#Checkbox17').prop('disabled', true);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', true);
+         $('#Checkbox25').prop('disabled', true);
+      }
+      if (!$('#Checkbox23').is(':checked'))
+      {
+         $('#Checkbox17').prop('disabled', false);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', false);
+         $('#Checkbox25').prop('disabled', false);
+      }
+   });
+   $("#Checkbox23").trigger('change');
+   $("#Checkbox24").change(function()
+   {
+      if ($('#Checkbox24').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', true);
+         $('#Checkbox17').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', true);
+         $('#Checkbox25').prop('disabled', true);
+      }
+      if (!$('#Checkbox24').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', false);
+         $('#Checkbox17').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', false);
+         $('#Checkbox25').prop('disabled', false);
+      }
+   });
+   $("#Checkbox24").trigger('change');
+   $("#Checkbox27").change(function()
+   {
+      if ($('#Checkbox27').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', true);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox17').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', true);
+         $('#Checkbox25').prop('disabled', true);
+      }
+      if (!$('#Checkbox27').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', false);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox17').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', false);
+         $('#Checkbox25').prop('disabled', false);
+      }
+   });
+   $("#Checkbox27").trigger('change');
+   $("#Checkbox26").change(function()
+   {
+      if ($('#Checkbox26').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', true);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox17').prop('disabled', true);
+         $('#Checkbox25').prop('disabled', true);
+      }
+      if (!$('#Checkbox26').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', false);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox17').prop('disabled', false);
+         $('#Checkbox25').prop('disabled', false);
+      }
+   });
+   $("#Checkbox26").trigger('change');
+   $("#Checkbox25").change(function()
+   {
+      if ($('#Checkbox25').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', true);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', true);
+         $('#Checkbox17').prop('disabled', true);
+      }
+      if (!$('#Checkbox25').is(':checked'))
+      {
+         $('#Checkbox23').prop('disabled', false);
+         $('#Checkbox24').prop('disabled', false);
+         $('#Checkbox27').prop('disabled', true);
+         $('#Checkbox26').prop('disabled', false);
+         $('#Checkbox17').prop('disabled', false);
+      }
+   });
+   $("#Checkbox25").trigger('change');
+   $("#Checkbox29").change(function()
+   {
+      if ($('#Checkbox29').is(':checked'))
+      {
+         $('#Checkbox28').prop('disabled', true);
+         $('#Checkbox30').prop('disabled', true);
+         $('#Checkbox33').prop('disabled', true);
+         $('#Checkbox32').prop('disabled', true);
+         $('#Checkbox31').prop('disabled', true);
+      }
+      if (!$('#Checkbox29').is(':checked'))
+      {
+         $('#Checkbox28').prop('disabled', false);
+         $('#Checkbox30').prop('disabled', false);
+         $('#Checkbox33').prop('disabled', false);
+         $('#Checkbox32').prop('disabled', false);
+         $('#Checkbox31').prop('disabled', false);
+      }
+   });
+   $("#Checkbox29").trigger('change');
+   $("#Checkbox30").change(function()
+   {
+      if ($('#Checkbox30').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', true);
+         $('#Checkbox28').prop('disabled', true);
+         $('#Checkbox33').prop('disabled', true);
+         $('#Checkbox32').prop('disabled', true);
+         $('#Checkbox31').prop('disabled', true);
+      }
+      if (!$('#Checkbox30').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', false);
+         $('#Checkbox28').prop('disabled', false);
+         $('#Checkbox33').prop('disabled', false);
+         $('#Checkbox32').prop('disabled', false);
+         $('#Checkbox31').prop('disabled', false);
+      }
+   });
+   $("#Checkbox30").trigger('change');
+   $("#Checkbox33").change(function()
+   {
+      if ($('#Checkbox33').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', true);
+         $('#Checkbox30').prop('disabled', true);
+         $('#Checkbox28').prop('disabled', true);
+         $('#Checkbox32').prop('disabled', true);
+         $('#Checkbox31').prop('disabled', true);
+      }
+      if (!$('#Checkbox33').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', false);
+         $('#Checkbox30').prop('disabled', false);
+         $('#Checkbox28').prop('disabled', false);
+         $('#Checkbox32').prop('disabled', false);
+         $('#Checkbox31').prop('disabled', false);
+      }
+   });
+   $("#Checkbox33").trigger('change');
+   $("#Checkbox32").change(function()
+   {
+      if ($('#Checkbox32').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', true);
+         $('#Checkbox30').prop('disabled', true);
+         $('#Checkbox33').prop('disabled', true);
+         $('#Checkbox28').prop('disabled', true);
+         $('#Checkbox31').prop('disabled', true);
+      }
+      if (!$('#Checkbox32').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', false);
+         $('#Checkbox30').prop('disabled', false);
+         $('#Checkbox33').prop('disabled', false);
+         $('#Checkbox28').prop('disabled', false);
+         $('#Checkbox31').prop('disabled', false);
+      }
+   });
+   $("#Checkbox32").trigger('change');
+   $("#Checkbox31").change(function()
+   {
+      if ($('#Checkbox31').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', true);
+         $('#Checkbox30').prop('disabled', true);
+         $('#Checkbox33').prop('disabled', true);
+         $('#Checkbox32').prop('disabled', true);
+         $('#Checkbox28').prop('disabled', true);
+      }
+      if (!$('#Checkbox31').is(':checked'))
+      {
+         $('#Checkbox29').prop('disabled', false);
+         $('#Checkbox30').prop('disabled', false);
+         $('#Checkbox33').prop('disabled', false);
+         $('#Checkbox32').prop('disabled', false);
+         $('#Checkbox28').prop('disabled', false);
+      }
+   });
+   $("#Checkbox31").trigger('change');
+   $("#Checkbox46").change(function()
+   {
+      if ($('#Checkbox46').is(':checked'))
+      {
+         $('#Checkbox47').prop('disabled', true);
+      }
+      if (!$('#Checkbox46').is(':checked'))
+      {
+         $('#Checkbox47').prop('disabled', false);
+      }
+   });
+   $("#Checkbox46").trigger('change');
+   $("#Checkbox47").change(function()
+   {
+      if ($('#Checkbox47').is(':checked'))
+      {
+         $('#Checkbox46').prop('disabled', true);
+      }
+      if (!$('#Checkbox47').is(':checked'))
+      {
+         $('#Checkbox46').prop('disabled', false);
+      }
+   });
+   $("#Checkbox47").trigger('change');
+   $("#Checkbox48").change(function()
+   {
+      if ($('#Checkbox48').is(':checked'))
+      {
+         $('#Checkbox49').prop('disabled', true);
+      }
+      if (!$('#Checkbox48').is(':checked'))
+      {
+         $('#Checkbox49').prop('disabled', false);
+      }
+   });
+   $("#Checkbox48").trigger('change');
+   $("#Checkbox49").change(function()
+   {
+      if ($('#Checkbox49').is(':checked'))
+      {
+         $('#Checkbox48').prop('disabled', true);
+      }
+      if (!$('#Checkbox49').is(':checked'))
+      {
+         $('#Checkbox48').prop('disabled', false);
+      }
+   });
+   $("#Checkbox49").trigger('change');
+   $("#Checkbox50").change(function()
+   {
+      if ($('#Checkbox50').is(':checked'))
+      {
+         $('#Checkbox51').prop('disabled', true);
+         $('#Checkbox52').prop('disabled', true);
+      }
+      if (!$('#Checkbox50').is(':checked'))
+      {
+         $('#Checkbox51').prop('disabled', false);
+         $('#Checkbox52').prop('disabled', false);
+      }
+   });
+   $("#Checkbox50").trigger('change');
+   $("#Checkbox51").change(function()
+   {
+      if ($('#Checkbox51').is(':checked'))
+      {
+         $('#Checkbox50').prop('disabled', true);
+         $('#Checkbox52').prop('disabled', true);
+      }
+      if (!$('#Checkbox51').is(':checked'))
+      {
+         $('#Checkbox50').prop('disabled', false);
+         $('#Checkbox52').prop('disabled', false);
+      }
+   });
+   $("#Checkbox51").trigger('change');
+   $("#Checkbox52").change(function()
+   {
+      if ($('#Checkbox52').is(':checked'))
+      {
+         $('#Checkbox50').prop('disabled', true);
+         $('#Checkbox51').prop('disabled', true);
+      }
+      if (!$('#Checkbox52').is(':checked'))
+      {
+         $('#Checkbox50').prop('disabled', false);
+         $('#Checkbox51').prop('disabled', false);
+      }
+   });
+   $("#Checkbox52").trigger('change');
+   $("#Checkbox53").change(function()
+   {
+      if ($('#Checkbox53').is(':checked'))
+      {
+         $('#Checkbox54').prop('disabled', true);
+         $('#Checkbox55').prop('disabled', true);
+         $('#Checkbox56').prop('disabled', true);
+         $('#Checkbox57').prop('disabled', true);
+         $('#Checkbox58').prop('disabled', true);
+         $('#Checkbox59').prop('disabled', true);
+      }
+      if (!$('#Checkbox53').is(':checked'))
+      {
+         $('#Checkbox54').prop('disabled', false);
+         $('#Checkbox55').prop('disabled', false);
+         $('#Checkbox56').prop('disabled', false);
+         $('#Checkbox57').prop('disabled', false);
+         $('#Checkbox58').prop('disabled', false);
+         $('#Checkbox59').prop('disabled', false);
+      }
+   });
+   $("#Checkbox53").trigger('change');
+   $("#Checkbox54").change(function()
+   {
+      if ($('#Checkbox54').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', true);
+         $('#Checkbox55').prop('disabled', true);
+         $('#Checkbox56').prop('disabled', true);
+         $('#Checkbox57').prop('disabled', true);
+         $('#Checkbox58').prop('disabled', true);
+         $('#Checkbox59').prop('disabled', true);
+      }
+      if (!$('#Checkbox54').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', false);
+         $('#Checkbox55').prop('disabled', false);
+         $('#Checkbox56').prop('disabled', false);
+         $('#Checkbox57').prop('disabled', false);
+         $('#Checkbox58').prop('disabled', false);
+         $('#Checkbox59').prop('disabled', false);
+      }
+   });
+   $("#Checkbox54").trigger('change');
+   $("#Checkbox55").change(function()
+   {
+      if ($('#Checkbox55').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', true);
+         $('#Checkbox54').prop('disabled', true);
+         $('#Checkbox56').prop('disabled', true);
+         $('#Checkbox57').prop('disabled', true);
+         $('#Checkbox58').prop('disabled', true);
+         $('#Checkbox59').prop('disabled', true);
+      }
+      if (!$('#Checkbox55').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', false);
+         $('#Checkbox54').prop('disabled', false);
+         $('#Checkbox56').prop('disabled', false);
+         $('#Checkbox57').prop('disabled', false);
+         $('#Checkbox58').prop('disabled', false);
+         $('#Checkbox59').prop('disabled', false);
+      }
+   });
+   $("#Checkbox55").trigger('change');
+   $("#Checkbox56").change(function()
+   {
+      if ($('#Checkbox56').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', true);
+         $('#Checkbox54').prop('disabled', true);
+         $('#Checkbox55').prop('disabled', true);
+         $('#Checkbox57').prop('disabled', true);
+         $('#Checkbox58').prop('disabled', true);
+         $('#Checkbox59').prop('disabled', true);
+      }
+      if (!$('#Checkbox56').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', false);
+         $('#Checkbox54').prop('disabled', false);
+         $('#Checkbox55').prop('disabled', false);
+         $('#Checkbox57').prop('disabled', false);
+         $('#Checkbox58').prop('disabled', false);
+         $('#Checkbox59').prop('disabled', false);
+      }
+   });
+   $("#Checkbox56").trigger('change');
+   $("#Checkbox57").change(function()
+   {
+      if ($('#Checkbox57').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', true);
+         $('#Checkbox54').prop('disabled', true);
+         $('#Checkbox55').prop('disabled', true);
+         $('#Checkbox56').prop('disabled', true);
+         $('#Checkbox58').prop('disabled', true);
+         $('#Checkbox59').prop('disabled', true);
+      }
+      if (!$('#Checkbox57').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', false);
+         $('#Checkbox54').prop('disabled', false);
+         $('#Checkbox55').prop('disabled', false);
+         $('#Checkbox56').prop('disabled', false);
+         $('#Checkbox58').prop('disabled', false);
+         $('#Checkbox59').prop('disabled', false);
+      }
+   });
+   $("#Checkbox57").trigger('change');
+   $("#Checkbox58").change(function()
+   {
+      if ($('#Checkbox58').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', true);
+         $('#Checkbox54').prop('disabled', true);
+         $('#Checkbox55').prop('disabled', true);
+         $('#Checkbox56').prop('disabled', true);
+         $('#Checkbox57').prop('disabled', true);
+         $('#Checkbox59').prop('disabled', true);
+      }
+      if (!$('#Checkbox58').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', true);
+         $('#Checkbox54').prop('disabled', false);
+         $('#Checkbox55').prop('disabled', false);
+         $('#Checkbox56').prop('disabled', false);
+         $('#Checkbox57').prop('disabled', false);
+         $('#Checkbox59').prop('disabled', false);
+      }
+   });
+   $("#Checkbox58").trigger('change');
+   $("#Checkbox59").change(function()
+   {
+      if ($('#Checkbox59').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', true);
+         $('#Checkbox54').prop('disabled', true);
+         $('#Checkbox55').prop('disabled', true);
+         $('#Checkbox56').prop('disabled', true);
+         $('#Checkbox57').prop('disabled', true);
+         $('#Checkbox58').prop('disabled', true);
+      }
+      if (!$('#Checkbox59').is(':checked'))
+      {
+         $('#Checkbox53').prop('disabled', false);
+         $('#Checkbox54').prop('disabled', false);
+         $('#Checkbox55').prop('disabled', false);
+         $('#Checkbox56').prop('disabled', false);
+         $('#Checkbox57').prop('disabled', false);
+         $('#Checkbox58').prop('disabled', false);
+      }
+   });
+   $("#Checkbox59").trigger('change');
+   $("#Checkbox60").change(function()
+   {
+      if ($('#Checkbox60').is(':checked'))
+      {
+         $('#Checkbox61').prop('disabled', true);
+         $('#Checkbox62').prop('disabled', true);
+         $('#Checkbox63').prop('disabled', true);
+         $('#Checkbox64').prop('disabled', true);
+         $('#Checkbox65').prop('disabled', true);
+      }
+      if (!$('#Checkbox60').is(':checked'))
+      {
+         $('#Checkbox61').prop('disabled', false);
+         $('#Checkbox62').prop('disabled', false);
+         $('#Checkbox63').prop('disabled', false);
+         $('#Checkbox64').prop('disabled', false);
+         $('#Checkbox65').prop('disabled', false);
+      }
+   });
+   $("#Checkbox60").trigger('change');
+   $("#Checkbox61").change(function()
+   {
+      if ($('#Checkbox61').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', true);
+         $('#Checkbox62').prop('disabled', true);
+         $('#Checkbox63').prop('disabled', true);
+         $('#Checkbox64').prop('disabled', true);
+         $('#Checkbox65').prop('disabled', true);
+      }
+      if (!$('#Checkbox61').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', false);
+         $('#Checkbox62').prop('disabled', false);
+         $('#Checkbox63').prop('disabled', false);
+         $('#Checkbox64').prop('disabled', false);
+         $('#Checkbox65').prop('disabled', false);
+      }
+   });
+   $("#Checkbox61").trigger('change');
+   $("#Checkbox62").change(function()
+   {
+      if ($('#Checkbox62').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', true);
+         $('#Checkbox61').prop('disabled', true);
+         $('#Checkbox63').prop('disabled', true);
+         $('#Checkbox64').prop('disabled', true);
+         $('#Checkbox65').prop('disabled', true);
+      }
+      if (!$('#Checkbox62').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', false);
+         $('#Checkbox61').prop('disabled', false);
+         $('#Checkbox63').prop('disabled', false);
+         $('#Checkbox64').prop('disabled', false);
+         $('#Checkbox65').prop('disabled', false);
+      }
+   });
+   $("#Checkbox62").trigger('change');
+   $("#Checkbox63").change(function()
+   {
+      if ($('#Checkbox63').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', true);
+         $('#Checkbox61').prop('disabled', true);
+         $('#Checkbox62').prop('disabled', true);
+         $('#Checkbox64').prop('disabled', true);
+         $('#Checkbox65').prop('disabled', true);
+      }
+      if (!$('#Checkbox63').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', false);
+         $('#Checkbox61').prop('disabled', false);
+         $('#Checkbox62').prop('disabled', false);
+         $('#Checkbox64').prop('disabled', false);
+         $('#Checkbox65').prop('disabled', false);
+      }
+   });
+   $("#Checkbox63").trigger('change');
+   $("#Checkbox64").change(function()
+   {
+      if ($('#Checkbox64').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', true);
+         $('#Checkbox61').prop('disabled', true);
+         $('#Checkbox62').prop('disabled', true);
+         $('#Checkbox63').prop('disabled', true);
+         $('#Checkbox65').prop('disabled', true);
+      }
+      if (!$('#Checkbox64').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', false);
+         $('#Checkbox61').prop('disabled', false);
+         $('#Checkbox62').prop('disabled', false);
+         $('#Checkbox63').prop('disabled', false);
+         $('#Checkbox65').prop('disabled', false);
+      }
+   });
+   $("#Checkbox64").trigger('change');
+   $("#Checkbox65").change(function()
+   {
+      if ($('#Checkbox65').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', true);
+         $('#Checkbox61').prop('disabled', true);
+         $('#Checkbox62').prop('disabled', true);
+         $('#Checkbox63').prop('disabled', true);
+         $('#Checkbox64').prop('disabled', true);
+      }
+      if (!$('#Checkbox65').is(':checked'))
+      {
+         $('#Checkbox60').prop('disabled', false);
+         $('#Checkbox61').prop('disabled', false);
+         $('#Checkbox62').prop('disabled', false);
+         $('#Checkbox63').prop('disabled', false);
+         $('#Checkbox64').prop('disabled', false);
+      }
+   });
+   $("#Checkbox65").trigger('change');
+   $("#Checkbox66").change(function()
+   {
+      if ($('#Checkbox66').is(':checked'))
+      {
+         $('#Checkbox67').prop('disabled', true);
+      }
+      if (!$('#Checkbox66').is(':checked'))
+      {
+         $('#Checkbox67').prop('disabled', false);
+      }
+   });
+   $("#Checkbox66").trigger('change');
+   $("#Checkbox67").change(function()
+   {
+      if ($('#Checkbox67').is(':checked'))
+      {
+         $('#Checkbox66').prop('disabled', true);
+      }
+      if (!$('#Checkbox67').is(':checked'))
+      {
+         $('#Checkbox66').prop('disabled', false);
+      }
+   });
+   $("#Checkbox67").trigger('change');
+   $("#Checkbox34").change(function()
+   {
+      if ($('#Checkbox34').is(':checked'))
+      {
+         $('#Checkbox35').prop('disabled', true);
+         $('#Checkbox36').prop('disabled', true);
+         $('#Checkbox39').prop('disabled', true);
+         $('#Checkbox38').prop('disabled', true);
+         $('#Checkbox37').prop('disabled', true);
+      }
+      if (!$('#Checkbox34').is(':checked'))
+      {
+         $('#Checkbox35').prop('disabled', false);
+         $('#Checkbox36').prop('disabled', false);
+         $('#Checkbox39').prop('disabled', false);
+         $('#Checkbox38').prop('disabled', false);
+         $('#Checkbox37').prop('disabled', false);
+      }
+   });
+   $("#Checkbox34").trigger('change');
+   $("#Checkbox35").change(function()
+   {
+      if ($('#Checkbox35').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', true);
+         $('#Checkbox36').prop('disabled', true);
+         $('#Checkbox39').prop('disabled', true);
+         $('#Checkbox38').prop('disabled', true);
+         $('#Checkbox37').prop('disabled', true);
+      }
+      if (!$('#Checkbox35').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', false);
+         $('#Checkbox36').prop('disabled', false);
+         $('#Checkbox39').prop('disabled', false);
+         $('#Checkbox38').prop('disabled', false);
+         $('#Checkbox37').prop('disabled', false);
+      }
+   });
+   $("#Checkbox35").trigger('change');
+   $("#Checkbox36").change(function()
+   {
+      if ($('#Checkbox36').is(':checked'))
+      {
+         $('#Checkbox35').prop('disabled', true);
+         $('#Checkbox34').prop('disabled', true);
+         $('#Checkbox39').prop('disabled', true);
+         $('#Checkbox38').prop('disabled', true);
+         $('#Checkbox37').prop('disabled', true);
+      }
+      if (!$('#Checkbox36').is(':checked'))
+      {
+         $('#Checkbox35').prop('disabled', false);
+         $('#Checkbox34').prop('disabled', false);
+         $('#Checkbox39').prop('disabled', false);
+         $('#Checkbox38').prop('disabled', false);
+         $('#Checkbox37').prop('disabled', false);
+      }
+   });
+   $("#Checkbox36").trigger('change');
+   $("#Checkbox37").change(function()
+   {
+      if ($('#Checkbox37').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', true);
+         $('#Checkbox35').prop('disabled', true);
+         $('#Checkbox36').prop('disabled', true);
+         $('#Checkbox38').prop('disabled', true);
+         $('#Checkbox39').prop('disabled', true);
+      }
+      if (!$('#Checkbox37').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', false);
+         $('#Checkbox35').prop('disabled', false);
+         $('#Checkbox36').prop('disabled', false);
+         $('#Checkbox38').prop('disabled', false);
+         $('#Checkbox39').prop('disabled', false);
+      }
+   });
+   $("#Checkbox37").trigger('change');
+   $("#Checkbox38").change(function()
+   {
+      if ($('#Checkbox38').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', true);
+         $('#Checkbox35').prop('disabled', true);
+         $('#Checkbox36').prop('disabled', true);
+         $('#Checkbox37').prop('disabled', true);
+         $('#Checkbox39').prop('disabled', true);
+      }
+      if (!$('#Checkbox38').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', false);
+         $('#Checkbox35').prop('disabled', false);
+         $('#Checkbox36').prop('disabled', false);
+         $('#Checkbox37').prop('disabled', false);
+         $('#Checkbox39').prop('disabled', false);
+      }
+   });
+   $("#Checkbox38").trigger('change');
+   $("#Checkbox39").change(function()
+   {
+      if ($('#Checkbox39').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', true);
+         $('#Checkbox35').prop('disabled', true);
+         $('#Checkbox36').prop('disabled', true);
+         $('#Checkbox37').prop('disabled', true);
+         $('#Checkbox38').prop('disabled', true);
+      }
+      if (!$('#Checkbox39').is(':checked'))
+      {
+         $('#Checkbox34').prop('disabled', false);
+         $('#Checkbox35').prop('disabled', false);
+         $('#Checkbox36').prop('disabled', false);
+         $('#Checkbox37').prop('disabled', false);
+         $('#Checkbox38').prop('disabled', false);
+      }
+   });
+   $("#Checkbox39").trigger('change');
+});
+</script>
+</head>
+<body>
+<div id="wb_Form1" style="position:absolute;left:0px;top:0px;width:862px;height:5682px;z-index:433;">
+<form name="Form1" method="post" action="" enctype="multipart/form-data" id="Form1" onsubmit="return submitForm1()">
+<table style="position:absolute;left:164px;top:51px;width:301px;height:47px;z-index:31;" id="Table1">
+<tr>
+<td class="cell0"><span style="color:#000000;font-family:'Times New Roman';font-size:13px;"><strong>519, Lahore Stock Exchange Building.</strong></span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span><span style="color:#000000;font-family:'Times New Roman';font-size:13px;"><strong>19 Khayaban-e-Aiwan-e-Iqbal. Lahore<br>Tel: 92-42-36372470-72 , Fax: 92-42-36368195</strong></span></td>
+</tr>
+</table>
+<div id="wb_Text14" style="position:absolute;left:10px;top:378px;width:217px;height:30px;z-index:32;">
+<p style="color:#000000;"><span style="color:#000000;">2. CNIC&nbsp;&nbsp;&nbsp;&nbsp; SNIC&nbsp;&nbsp;&nbsp;&nbsp; NICOP&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p style="color:#000000;"><span style="color:#000000;">POC&nbsp;&nbsp;&nbsp;&nbsp; Passport No&nbsp;&nbsp;&nbsp;&nbsp; ARC&nbsp;&nbsp;&nbsp;&nbsp; </span></p></div>
+<div id="wb_Text2" style="position:absolute;left:112px;top:94px;width:180px;height:15px;z-index:33;">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><strong>Email: </strong>info@zafarstocks.com</span></div>
+<table style="position:absolute;left:33px;top:106px;width:478px;height:48px;z-index:34;" id="Table2">
+<tr>
+<td colspan="2" class="cell0"><div style="margin-left:96px;position:absolute;left:0px;top:0px;width:477px;height:20px;"><span style="color:#000000;font-family:'Times New Roman';font-size:19px;"><strong>CUSTOMER RELATIONSHIP FORM </strong></span><strong></strong></div>
+<div style="position:absolute;left:0px;top:21px;width:477px;height:20px;"><span style="color:#000000;font-family:'Times New Roman';font-size:19px;"><strong>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; FOR INDIVIDUALS</strong></span></div>
+</td>
+</tr>
+</table>
+<div id="wb_Text3" style="position:absolute;left:317px;top:96px;width:168px;height:15px;z-index:35;">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><strong>URL: </strong>www.zafarstocks.com</span></div>
+<table style="position:absolute;left:24px;top:143px;width:539px;height:35px;z-index:36;" id="Table4">
+<tr>
+<td class="cell0"><span style="color:#000000;font-family:Arial;font-size:15px;"> </span><span style="color:#000000;font-family:'Times New Roman';font-size:15px;"><strong> (Please Also Fill KYC APPLICATION FORM for Main and Joint Applicants)</strong></span></td>
+</tr>
+</table>
+<table style="position:absolute;left:564px;top:0px;width:275px;height:187px;z-index:37;" id="Table3">
+<tr>
+<td colspan="2" class="cell0"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong>&nbsp; For official use of the Participant/TRE Certificate Holder&nbsp; only</strong></span></td>
+</tr>
+<tr>
+<td class="cell1"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> Application Form No.</strong></span></td>
+<td class="cell2"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span></td>
+</tr>
+<tr>
+<td class="cell3"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> TRE Certificate No</strong></span></td>
+<td class="cell4"><span style="color:#000000;font-family:Arial;font-size:11px;"> 068</span></td>
+</tr>
+<tr>
+<td class="cell5"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> Securities Broker Registration No.</strong></span></td>
+<td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;"> BRL-11</span></td>
+</tr>
+<tr>
+<td class="cell1"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> CDS Participant ID</strong></span></td>
+<td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;"> 03244</span></td>
+</tr>
+<tr>
+<td class="cell1"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> Sub-Account No.</strong></span></td>
+<td class="cell2"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span></td>
+</tr>
+<tr>
+<td class="cell5"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> Trading Account No.<br>(Back-office ID)</strong></span></td>
+<td class="cell8"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span></td>
+</tr>
+<tr>
+<td class="cell1"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong>Investor Account No.</strong></span></td>
+<td class="cell9"></td>
+</tr>
+</table>
+<div id="wb_Text4" style="position:absolute;left:317px;top:176px;width:289px;height:12px;z-index:38;">
+<span style="color:#000000;font-family:Arial;font-size:11px;"><strong>(Please use BLOCK LETTERS to fill the form)</strong></span></div>
+<div id="wb_Checkbox1" style="position:absolute;left:414px;top:188px;width:20px;height:17px;z-index:39;">
+<input type="checkbox" id="Checkbox1" name="Checkbox1" value="on" checked style="position:absolute;left:0;top:0;" disabled><label for="Checkbox1"></label></div>
+<div id="wb_Checkbox4" style="position:absolute;left:36px;top:205px;width:12px;height:14px;z-index:40;">
+<input type="checkbox" id="Checkbox4" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" disabled><label for="Checkbox4"></label></div>
+<div id="wb_Checkbox5" style="position:absolute;left:36px;top:222px;width:12px;height:14px;z-index:41;">
+<input type="checkbox" id="Checkbox5" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" disabled><label for="Checkbox5"></label></div>
+<div id="wb_Checkbox6" style="position:absolute;left:36px;top:273px;width:12px;height:14px;z-index:42;">
+<input type="checkbox" id="Checkbox6" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" disabled><label for="Checkbox6"></label></div>
+<div id="wb_Checkbox7" style="position:absolute;left:36px;top:239px;width:12px;height:14px;z-index:43;">
+<input type="checkbox" id="Checkbox7" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" disabled><label for="Checkbox7"></label></div>
+<table style="position:absolute;left:2px;top:310px;width:840px;height:43px;z-index:44;" id="Table6">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;color:#000000;"><span style="font-family:arial;color:#000000;">&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">A. REGISTRATION (AND OTHER) DETAILS OF MAIN APPLICANT (The information should be same as provided in the KYC Application Form)</span></p></td>
+</tr>
+<tr>
+<td colspan="2" class="cell1"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">1. Full name of Applicant (As per CNIC/SNIC/NICOP/ARC/POC/Passport) MR. / MRS. / MS.</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">UKN No.</span></p></td>
+</tr>
+</table>
+<input type="text" id="Editbox1" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:2px;top:353px;width:830px;height:16px;z-index:45;" name="Editbox1" value="" maxlength="30" tabindex="1" autocomplete="off" spellcheck="false">
+<div id="wb_Checkbox11" style="position:absolute;left:424px;top:276px;width:12px;height:14px;z-index:46;">
+<input type="checkbox" id="Checkbox11" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" disabled><label for="Checkbox11"></label></div>
+<input type="TEXT" id="Editbox2"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox3')"style="position:absolute;left:210px;top:383px;width:25px;height:16px;z-index:52;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox3"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox4')" style="position:absolute;left:250px;top:383px;width:25px;height:16px;z-index:53;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox4"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox5')" style="position:absolute;left:290px;top:383px;width:25px;height:16px;z-index:54;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox5"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox6')" style="position:absolute;left:330px;top:383px;width:25px;height:16px;z-index:55;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox6"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox8')" style="position:absolute;left:370px;top:383px;width:25px;height:16px;z-index:56;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox7"style="position:absolute;left:410px;top:383px;width:25px;height:16px;z-index:57;"name="Editbox7" value="" maxlength="1" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="TEXT" id="Editbox8"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox9')" style="position:absolute;left:450px;top:383px;width:25px;height:16px;z-index:58;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox9"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox10')" style="position:absolute;left:490px;top:383px;width:25px;height:16px;z-index:59;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox10"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox11')" style="position:absolute;left:530px;top:383px;width:25px;height:16px;z-index:60;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox11"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox12')" style="position:absolute;left:570px;top:383px;width:25px;height:16px;z-index:61;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox12"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox13')" style="position:absolute;left:610px;top:383px;width:25px;height:16px;z-index:62;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox13"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox14')" style="position:absolute;left:650px;top:383px;width:25px;height:16px;z-index:63;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox14"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox16')" style="position:absolute;left:690px;top:383px;width:25px;height:16px;z-index:64;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox15"style="position:absolute;left:730px;top:383px;width:25px;height:16px;z-index:65;" name="Editbox2" value="" maxlength="1" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="TEXT" id="Editbox16"onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox16')onkeyup="moveCursor(this,'Editbox16')" style="position:absolute;left:770px;top:383px;width:25px;height:16px;z-index:66;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<table style="position:absolute;left:2px;top:414px;width:841px;height:54px;z-index:63;" id="Table7">
+<tr>
+<td class="cell0"><p style="color:#000000;line-height:13.47px;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;font-weight:bold;">3. Details of Contact Person: [</span><span style="font-family:Times New Roman;font-size:11px;">Note: Contact Person shall not be the person other than the Main Applicant, any one of the Joint Applicants or their Attorney. However, Attorney shall not be a Participant/TRE Certificate Holder or its Director or Representative. Where Contact Person is the Main Applicant or any of the Joint Applicants, please tick (</span><span style="font-family:Wingdings 2;font-size:11px;">P</span><span style="font-family:Times New Roman;font-size:11px;">) the appropriate box (a) below and use the contact details of such Contact Person as provided in the KYC Application Form for CDS. Where Contact Person is an Attorney, please provide details in (a) to (i) below]</span></p></td>
+</tr>
+</table>
+<div id="wb_Text6" style="position:absolute;left:2px;top:467px;width:200px;height:12px;z-index:64;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">(a) Contact Person:&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">&nbsp;&nbsp;&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Main Applicant</span></p></div>
+<div id="wb_Text9" style="position:absolute;left:367px;top:468px;width:123px;height:12px;z-index:65;">
+<p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Joint Applicant No. 2 </span></p></div>
+<div id="wb_Text12" style="position:absolute;left:2px;top:481px;width:190px;height:12px;z-index:66;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">(b) Attorney Name: MR. / MRS. / MS.</span></p></div>
+<input type="text" id="Editbox17" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:2px;top:492px;width:830px;height:16px;z-index:67;" name="Editbox17" value="" maxlength="30" tabindex="28" autocomplete="off" spellcheck="false">
+<div id="wb_Text13" style="position:absolute;left:11px;top:516px;width:113px;height:12px;z-index:68;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">(c) Mailing Address:</span></p></div>
+<input type="text" id="Editbox18" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:2px;top:528px;width:830px;height:16px;z-index:69;" name="Editbox18" autocomplete="off" spellcheck="false">
+<div id="wb_Text7" style="position:absolute;left:11px;top:554px;width:198px;height:30px;z-index:70;">
+<p style="color:#000000;"><span style="color:#000000;">2. CNIC&nbsp;&nbsp;&nbsp;&nbsp; SNIC&nbsp;&nbsp;&nbsp;&nbsp; NICOP&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p style="color:#000000;"><span style="color:#000000;">POC&nbsp;&nbsp;&nbsp;&nbsp; Passport No&nbsp;&nbsp;&nbsp;&nbsp; ARC&nbsp;&nbsp;&nbsp;&nbsp; </span></p></div>
+<div id="wb_Checkbox17" style="position:absolute;left:58px;top:552px;width:12px;height:14px;z-index:71;">
+<input type="checkbox" id="Checkbox17" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="30"><label for="Checkbox17"></label></div>
+<input type="TEXT" id="Editbox19" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox20')" style="position:absolute;left:210px;top:556px;width:25px;height:16px;z-index:73;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox20" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox21')" style="position:absolute;left:250px;top:556px;width:25px;height:16px;z-index:74;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox21" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox22')" style="position:absolute;left:290px;top:556px;width:25px;height:16px;z-index:75;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox22" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox23')" style="position:absolute;left:330px;top:556px;width:25px;height:16px;z-index:76;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox23" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox25')" style="position:absolute;left:370px;top:556px;width:25px;height:16px;z-index:77;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox24" style="position:absolute;left:410px;top:556px;width:25px;height:16px;z-index:78;" name="Editbox2" value="" maxlength="1" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="TEXT" id="Editbox25" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox26')" style="position:absolute;left:450px;top:556px;width:25px;height:16px;z-index:79;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox26" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox27')" style="position:absolute;left:490px;top:556px;width:25px;height:16px;z-index:80;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox27" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox28')" style="position:absolute;left:530px;top:556px;width:25px;height:16px;z-index:81;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox28" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox29')" style="position:absolute;left:570px;top:556px;width:25px;height:16px;z-index:82;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox29" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox30')" style="position:absolute;left:610px;top:556px;width:25px;height:16px;z-index:83;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox31" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox33')" style="position:absolute;left:690px;top:556px;width:25px;height:16px;z-index:84;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="TEXT" id="Editbox32" onkeypress='validate(event)'style="position:absolute;left:730px;top:556px;width:25px;height:16px;z-index:85;" name="Editbox2" value="" maxlength="1" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="TEXT" id="Editbox33" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox33')" style="position:absolute;left:770px;top:556px;width:25px;height:16px;z-index:86;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<hr id="Line2" style="position:absolute;left:2px;top:584px;width:840px;z-index:86;">
+<div id="wb_Text15" style="position:absolute;left:2px;top:591px;width:269px;height:12px;z-index:87;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">(e) Expiry date of CNIC//SNIC/NICOP/ARC/POC: </span></p></div>
+<input type="text" id="Editbox34" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox35')"style="position:absolute;left:279px;top:586px;width:14px;height:14px;z-index:89;" name="Editbox34" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="D">
+<input type="TEXT" id="Editbox35" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox36')"style="position:absolute;left:308px;top:586px;width:14px;height:14px;z-index:90;" name="Editbox35" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="D">
+<input type="TEXT" id="Editbox36" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox37')"style="position:absolute;left:336px;top:586px;width:14px;height:14px;z-index:91;" name="Editbox36" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="M">
+<input type="TEXT" id="Editbox37" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox38')"style="position:absolute;left:364px;top:586px;width:14px;height:14px;z-index:92;" name="Editbox7" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="M">
+<input type="TEXT" id="Editbox38" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox39')"style="position:absolute;left:393px;top:586px;width:14px;height:14px;z-index:93;" name="Editbox38" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="Y">
+<input type="TEXT" id="Editbox39" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox40')"style="position:absolute;left:422px;top:586px;width:14px;height:14px;z-index:94;" name="Editbox39" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="Y">
+<input type="TEXT" id="Editbox40" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox41')"style="position:absolute;left:451px;top:586px;width:14px;height:14px;z-index:95;" name="Editbox40" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="Y">
+<input type="TEXT" id="Editbox41" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox41')"style="position:absolute;left:480px;top:586px;width:14px;height:14px;z-index:96;" name="Editbox41" value="" maxlength="1" autocomplete="off" spellcheck="false" placeholder="Y">
+<hr id="Line3" style="position:absolute;left:2px;top:611px;width:840px;z-index:96;">
+<div id="wb_Text16" style="position:absolute;left:15px;top:622px;width:95px;height:24px;z-index:97;">
+<p style="font-size:11px;line-height:11.5px;font-weight:bold;">(f) Passport details:</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">(For a foreigner)</span></p></div>
+<div id="wb_Line6" style="position:absolute;left:189px;top:599px;width:1px;height:78px;z-index:98;">
+<img src="images/img0001.png" id="Line6" alt=""></div>
+<hr id="Line4" style="position:absolute;left:2px;top:690px;width:840px;z-index:99;">
+<div id="wb_Text17" style="position:absolute;left:12px;top:654px;width:173px;height:35px;z-index:100;">
+<p style="font-size:11px;line-height:11.5px;font-weight:bold;">(g) Contact No:</p>
+<p style="margin:0px 0px 0px 30px;font-size:9.3px;line-height:10.5px;"><span style="font-family:Symbol;">·	</span>Land Line No.: (optional)</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">&nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family:Symbol;font-size:9.3px;line-height:11.5px;">·</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">&nbsp;&nbsp; </span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">Local Mobile No.(*)</span></p></div>
+<hr id="Line5" style="position:absolute;left:2px;top:653px;width:282px;z-index:101;">
+<div id="wb_Text19" style="position:absolute;left:204px;top:614px;width:104px;height:12px;z-index:102;">
+<p style="font-family:Arial;font-size:11px;line-height:12px;"><span style="font-family:Times New Roman;font-weight:bold;">Passport Number:</span></p></div>
+<div id="wb_Text20" style="position:absolute;left:204px;top:633px;width:82px;height:12px;z-index:103;">
+<p style="font-family:Arial;font-size:11px;line-height:12px;font-weight:bold;"><span style="font-family:Times New Roman;">Date of Issue:</span></p></div>
+<input type="date"id="Editbox42"style="position:absolute;left:299px;top:634px;width:210px;height:10px;z-index:104;" name="Editbox42" value="" tabindex="59" spellcheck="false" placeholder="DD-MM-YYYY">
+<div id="wb_Line7" style="position:absolute;left:509px;top:599px;width:1px;height:78px;z-index:105;">
+<img src="images/img0002.png" id="Line7" alt=""></div>
+<div id="wb_Text24" style="position:absolute;left:203px;top:665px;width:95px;height:12px;z-index:106;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">(h) Fax: (optional)</span></p></div>
+<input type="text" id="Editbox43" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:299px;top:655px;width:210px;height:23px;z-index:107;" name="Editbox2" value="" tabindex="60" spellcheck="false">
+<div id="wb_Text21" style="position:absolute;left:540px;top:617px;width:88px;height:12px;z-index:108;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Place of Issue:</span></p></div>
+<div id="wb_Text22" style="position:absolute;left:539px;top:638px;width:83px;height:12px;z-index:109;">
+<p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Date of Expiry:</span></p></div>
+<div id="wb_Text25" style="position:absolute;left:539px;top:665px;width:87px;height:12px;z-index:110;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">(i) Email:(*)</span></p></div>
+<input type="text" id="Editbox44" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:632px;top:613px;width:208px;height:10px;z-index:111;" name="Editbox44" value="" tabindex="61" spellcheck="false">
+<input type="text" id="Editbox46" style="position:absolute;left:632px;top:634px;width:208px;height:10px;z-index:112;" name="Editbox2" value="" tabindex="62" spellcheck="false" placeholder="DD-MM-YYYY">
+<input type="email" id="Editbox47" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:632px;top:655px;width:208px;height:23px;z-index:113;" name="Editbox47" value="" tabindex="63" spellcheck="false">
+<hr id="Line1" style="position:absolute;left:2px;top:482px;width:840px;z-index:114;">
+<div id="wb_Checkbox22" style="position:absolute;left:486px;top:467px;width:12px;height:14px;z-index:115;">
+<input type="checkbox" id="Checkbox22" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="25"><label for="Checkbox22"></label></div>
+<div id="wb_Checkbox18" style="position:absolute;left:214px;top:467px;width:12px;height:14px;z-index:116;">
+<input type="checkbox" id="Checkbox18" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="23"><label for="Checkbox18"></label></div>
+<div id="wb_Text8" style="position:absolute;left:230px;top:468px;width:111px;height:12px;z-index:117;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Joint Applicant No. 1</span></p></div>
+<div id="wb_Checkbox20" style="position:absolute;left:350px;top:467px;width:12px;height:14px;z-index:118;">
+<input type="checkbox" id="Checkbox20" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="24"><label for="Checkbox20"></label></div>
+<div id="wb_Text10" style="position:absolute;left:512px;top:468px;width:118px;height:12px;z-index:119;">
+<p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Joint Applicant No. 3</span></p></div>
+<div id="wb_Checkbox21" style="position:absolute;left:621px;top:467px;width:12px;height:14px;z-index:120;">
+<input type="checkbox" id="Checkbox21" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="26"><label for="Checkbox21"></label></div>
+<div id="wb_Text11" style="position:absolute;left:651px;top:468px;width:61px;height:12px;z-index:121;">
+<p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Attorney</span></p></div>
+<table style="position:absolute;left:2px;top:752px;width:840px;height:26px;z-index:122;" id="Table9">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">B. REGISTRATION (AND OTHER) DETAILS OF THE JOINT APPLICANT(S) </span><span style="font-family:Times New Roman;font-size:8px;line-height:9.5px;font-weight:bold;">(</span><span style="font-family:Times New Roman;font-size:8px;line-height:9.5px;">The information should be same as provided in the KYC Application Form.</span><span style="font-family:Times New Roman;font-size:8px;line-height:9.5px;">&nbsp;</span><span style="font-family:Times New Roman;font-size:8px;line-height:9.5px;">Complete details of Joint Holders shall be fetched from the Central Portal / KIS)</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:799px;width:839px;height:20px;z-index:123;" id="Table10">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">1. Full name of Applicant (As per CNIC/SNIC/NICOP/ARC/POC/Passport) MR. / MRS. / MS.</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">UKN No.</span></p></td>
+</tr>
+</table>
+<input type="text" id="Editbox48" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:2px;top:820px;width:830px;height:16px;z-index:124;" name="Editbox48" value="" maxlength="30" tabindex="64" autocomplete="off" spellcheck="false">
+<div id="wb_Text26" style="position:absolute;left:11px;top:846px;width:217px;height:30px;z-index:125;">
+<p style="color:#000000;"><span style="color:#000000;">1. CNIC&nbsp;&nbsp;&nbsp;&nbsp; SNIC&nbsp;&nbsp;&nbsp;&nbsp; NICOP&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p style="color:#000000;"><span style="color:#000000;">POC&nbsp;&nbsp;&nbsp;&nbsp; Passport No&nbsp;&nbsp;&nbsp;&nbsp; ARC&nbsp;&nbsp;&nbsp;&nbsp; </span></p></div>
+<input type="number" id="Editbox49" style="position:absolute;left:211px;top:852px;width:25px;height:16px;z-index:126;" name="Editbox2" value="" maxlength="1" tabindex="71" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox50" style="position:absolute;left:251px;top:852px;width:25px;height:16px;z-index:127;" name="Editbox2" value="" maxlength="1" tabindex="72" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox51" style="position:absolute;left:291px;top:852px;width:25px;height:16px;z-index:128;" name="Editbox2" value="" maxlength="1" tabindex="73" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox52" style="position:absolute;left:331px;top:852px;width:25px;height:16px;z-index:129;" name="Editbox2" value="" maxlength="1" tabindex="74" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox53" style="position:absolute;left:371px;top:852px;width:25px;height:16px;z-index:130;" name="Editbox2" value="" maxlength="1" tabindex="75" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox54" style="position:absolute;left:411px;top:852px;width:25px;height:16px;z-index:131;" name="Editbox2" value="" maxlength="1" tabindex="76" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="number" id="Editbox55" style="position:absolute;left:451px;top:852px;width:25px;height:16px;z-index:132;" name="Editbox2" value="" maxlength="1" tabindex="77" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox56" style="position:absolute;left:491px;top:852px;width:25px;height:16px;z-index:133;" name="Editbox2" value="" maxlength="1" tabindex="78" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox57" style="position:absolute;left:531px;top:852px;width:25px;height:16px;z-index:134;" name="Editbox2" value="" maxlength="1" tabindex="79" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox58" style="position:absolute;left:571px;top:852px;width:25px;height:16px;z-index:135;" name="Editbox2" value="" maxlength="1" tabindex="80" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox59" style="position:absolute;left:611px;top:852px;width:25px;height:16px;z-index:136;" name="Editbox2" value="" maxlength="1" tabindex="81" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox60" style="position:absolute;left:651px;top:852px;width:25px;height:16px;z-index:137;" name="Editbox2" value="" maxlength="1" tabindex="82" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox61" style="position:absolute;left:691px;top:852px;width:25px;height:16px;z-index:138;" name="Editbox2" value="" maxlength="1" tabindex="83" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox62" style="position:absolute;left:731px;top:852px;width:25px;height:16px;z-index:139;" name="Editbox2" value="" maxlength="1" tabindex="84" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="number" id="Editbox63" style="position:absolute;left:771px;top:852px;width:25px;height:16px;z-index:140;" name="Editbox2" value="" maxlength="1" tabindex="85" autocomplete="off" spellcheck="false">
+<div id="wb_Checkbox28" style="position:absolute;left:60px;top:845px;width:12px;height:14px;z-index:141;">
+<input type="checkbox" id="Checkbox28" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="65"><label for="Checkbox28"></label></div>
+<table style="position:absolute;left:2px;top:782px;width:840px;height:16px;z-index:142;" id="Table11">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Joint Applicant No. </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">1</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:879px;width:840px;height:16px;z-index:143;" id="Table12">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Joint Applicant No. </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">2</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:896px;width:839px;height:20px;z-index:144;" id="Table13">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">2</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">. Full name of Applicant (As per CNIC/SNIC/NICOP/ARC/POC/Passport) MR. / MRS. / MS.</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">UKN No.</span></p></td>
+</tr>
+</table>
+<input type="text" id="Editbox64" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:2px;top:917px;width:830px;height:16px;z-index:145;" name="Editbox64" value="" maxlength="30" tabindex="86" autocomplete="off" spellcheck="false">
+<table style="position:absolute;left:2px;top:977px;width:840px;height:16px;z-index:146;" id="Table14">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Joint Applicant No. </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">3</span></p></td>
+</tr>
+</table>
+<input type="number" id="Editbox65" style="position:absolute;left:211px;top:948px;width:25px;height:16px;z-index:147;" name="Editbox2" value="" maxlength="1" tabindex="93" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox66" style="position:absolute;left:251px;top:948px;width:25px;height:16px;z-index:148;" name="Editbox2" value="" maxlength="1" tabindex="94" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox67" style="position:absolute;left:291px;top:948px;width:25px;height:16px;z-index:149;" name="Editbox2" value="" maxlength="1" tabindex="95" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox68" style="position:absolute;left:331px;top:948px;width:25px;height:16px;z-index:150;" name="Editbox2" value="" maxlength="1" tabindex="96" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox69" style="position:absolute;left:371px;top:948px;width:25px;height:16px;z-index:151;" name="Editbox2" value="" maxlength="1" tabindex="97" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox70" style="position:absolute;left:412px;top:948px;width:25px;height:16px;z-index:152;" name="Editbox2" value="" maxlength="1" tabindex="98" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="number" id="Editbox71" style="position:absolute;left:451px;top:948px;width:25px;height:16px;z-index:153;" name="Editbox2" value="" maxlength="1" tabindex="99" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox72" style="position:absolute;left:491px;top:948px;width:25px;height:16px;z-index:154;" name="Editbox2" value="" maxlength="1" tabindex="100" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox73" style="position:absolute;left:531px;top:948px;width:25px;height:16px;z-index:155;" name="Editbox2" value="" maxlength="1" tabindex="101" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox74" style="position:absolute;left:571px;top:948px;width:25px;height:16px;z-index:156;" name="Editbox2" value="" maxlength="1" tabindex="102" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox75" style="position:absolute;left:611px;top:948px;width:25px;height:16px;z-index:157;" name="Editbox2" value="" maxlength="1" tabindex="103" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox76" style="position:absolute;left:651px;top:948px;width:25px;height:16px;z-index:158;" name="Editbox2" value="" maxlength="1" tabindex="104" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox77" style="position:absolute;left:691px;top:948px;width:25px;height:16px;z-index:159;" name="Editbox2" value="" maxlength="1" tabindex="105" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox78" style="position:absolute;left:731px;top:948px;width:25px;height:16px;z-index:160;" name="Editbox2" value="" maxlength="1" tabindex="106" disabled autocomplete="off" spellcheck="false" placeholder="-">
+<input type="number" id="Editbox79" style="position:absolute;left:771px;top:948px;width:25px;height:16px;z-index:161;" name="Editbox2" value="" maxlength="1" tabindex="107" autocomplete="off" spellcheck="false">
+<table style="position:absolute;left:2px;top:994px;width:839px;height:20px;z-index:162;" id="Table15">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">3</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">. Full name of Applicant (As per CNIC/SNIC/NICOP/ARC/POC/Passport) MR. / MRS. / MS.</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">UKN No.</span></p></td>
+</tr>
+</table>
+<input type="text" id="Editbox95" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:2px;top:1015px;width:830px;height:16px;z-index:163;" name="Editbox1" value="" maxlength="30" tabindex="108" autocomplete="off" spellcheck="false">
+<div id="wb_Text28" style="position:absolute;left:8px;top:1041px;width:217px;height:30px;z-index:164;">
+<p style="color:#000000;"><span style="color:#000000;">3. CNIC&nbsp;&nbsp;&nbsp;&nbsp; SNIC&nbsp;&nbsp;&nbsp;&nbsp; NICOP&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p style="color:#000000;"><span style="color:#000000;">POC&nbsp;&nbsp;&nbsp;&nbsp; Passport No&nbsp;&nbsp;&nbsp; ARC&nbsp;&nbsp;&nbsp;&nbsp; </span></p></div>
+<input type="number" id="Editbox80" style="position:absolute;left:211px;top:1044px;width:25px;height:16px;z-index:165;" name="Editbox2" value="" maxlength="1" tabindex="115" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox81" style="position:absolute;left:251px;top:1044px;width:25px;height:16px;z-index:166;" name="Editbox2" value="" maxlength="1" tabindex="116" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox82" style="position:absolute;left:291px;top:1044px;width:25px;height:16px;z-index:167;" name="Editbox2" value="" maxlength="1" tabindex="117" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox83" style="position:absolute;left:331px;top:1044px;width:25px;height:16px;z-index:168;" name="Editbox2" value="" maxlength="1" tabindex="118" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox84" style="position:absolute;left:371px;top:1044px;width:25px;height:16px;z-index:169;" name="Editbox2" value="" maxlength="1" tabindex="119" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox85" style="position:absolute;left:411px;top:1044px;width:25px;height:16px;z-index:170;" name="Editbox2" value="" maxlength="1" tabindex="120" autocomplete="off" spellcheck="false" placeholder="-">
+<input type="number" id="Editbox86" style="position:absolute;left:451px;top:1044px;width:25px;height:16px;z-index:171;" name="Editbox2" value="" maxlength="1" tabindex="121" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox87" style="position:absolute;left:491px;top:1044px;width:25px;height:16px;z-index:172;" name="Editbox2" value="" maxlength="1" tabindex="122" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox88" style="position:absolute;left:531px;top:1044px;width:25px;height:16px;z-index:173;" name="Editbox2" value="" maxlength="1" tabindex="123" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox89" style="position:absolute;left:571px;top:1044px;width:25px;height:16px;z-index:174;" name="Editbox2" value="" maxlength="1" tabindex="124" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox90" style="position:absolute;left:611px;top:1044px;width:25px;height:16px;z-index:175;" name="Editbox2" value="" maxlength="1" tabindex="125" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox91" style="position:absolute;left:651px;top:1044px;width:25px;height:16px;z-index:176;" name="Editbox2" value="" maxlength="1" tabindex="126" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox92" style="position:absolute;left:691px;top:1044px;width:25px;height:16px;z-index:177;" name="Editbox2" value="" maxlength="1" tabindex="127" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox93" style="position:absolute;left:731px;top:1044px;width:25px;height:16px;z-index:178;" name="Editbox2" value="" maxlength="1" tabindex="128" autocomplete="off" spellcheck="false" placeholder="-">
+<div id="wb_Checkbox40" style="position:absolute;left:55px;top:1042px;width:12px;height:14px;z-index:179;">
+<input type="checkbox" id="Checkbox40" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="109"><label for="Checkbox40"></label></div>
+<div id="wb_Checkbox41" style="position:absolute;left:105px;top:1040px;width:12px;height:14px;z-index:180;">
+<input type="checkbox" id="Checkbox41" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="110"><label for="Checkbox41"></label></div>
+<div id="wb_Checkbox42" style="position:absolute;left:171px;top:1037px;width:12px;height:14px;z-index:181;">
+<input type="checkbox" id="Checkbox42" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="111"><label for="Checkbox42"></label></div>
+<div id="wb_Checkbox43" style="position:absolute;left:171px;top:1053px;width:12px;height:14px;z-index:182;">
+<input type="checkbox" id="Checkbox43" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="114"><label for="Checkbox43"></label></div>
+<div id="wb_Checkbox44" style="position:absolute;left:127px;top:1055px;width:12px;height:14px;z-index:183;">
+<input type="checkbox" id="Checkbox44" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="113"><label for="Checkbox44"></label></div>
+<div id="wb_Checkbox45" style="position:absolute;left:38px;top:1056px;width:12px;height:14px;z-index:184;">
+<input type="checkbox" id="Checkbox45" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="112"><label for="Checkbox45"></label></div>
+<input type="number" id="Editbox94" style="position:absolute;left:771px;top:1044px;width:25px;height:16px;z-index:185;" name="Editbox2" value="" maxlength="1" tabindex="129" autocomplete="off" spellcheck="false">
+<div id="wb_Checkbox14" style="position:absolute;left:130px;top:393px;width:12px;height:14px;z-index:186;">
+<input type="checkbox" id="Checkbox14" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="6"><label for="Checkbox14"></label></div>
+<div id="wb_Checkbox13" style="position:absolute;left:41px;top:391px;width:12px;height:14px;z-index:187;">
+<input type="checkbox" id="Checkbox13" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="5"><label for="Checkbox13"></label></div>
+<div id="wb_Checkbox15" style="position:absolute;left:182px;top:378px;width:12px;height:14px;z-index:188;">
+<input type="checkbox" id="Checkbox15" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="4"><label for="Checkbox15"></label></div>
+<div id="wb_Checkbox12" style="position:absolute;left:108px;top:377px;width:12px;height:14px;z-index:189;">
+<input type="checkbox" id="Checkbox12" name="Checkbox12" value="on" style="position:absolute;left:0;top:0;" tabindex="3"><label for="Checkbox12"></label></div>
+<div id="wb_Checkbox8" style="position:absolute;left:57px;top:378px;width:12px;height:14px;z-index:190;">
+<input type="checkbox" id="Checkbox8" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="2"><label for="Checkbox8"></label></div>
+<div id="wb_Checkbox19" style="position:absolute;left:711px;top:467px;width:12px;height:14px;z-index:191;">
+<input type="checkbox" id="Checkbox19" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="27"><label for="Checkbox19"></label></div>
+<div id="wb_Checkbox23" style="position:absolute;left:108px;top:552px;width:12px;height:14px;z-index:192;">
+<input type="checkbox" id="Checkbox23" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="31"><label for="Checkbox23"></label></div>
+<div id="wb_Checkbox24" style="position:absolute;left:176px;top:553px;width:12px;height:14px;z-index:193;">
+<input type="checkbox" id="Checkbox24" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="32"><label for="Checkbox24"></label></div>
+<div id="wb_Checkbox27" style="position:absolute;left:40px;top:567px;width:12px;height:14px;z-index:194;">
+<input type="checkbox" id="Checkbox27" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="33"><label for="Checkbox27"></label></div>
+<div id="wb_Checkbox26" style="position:absolute;left:130px;top:568px;width:12px;height:14px;z-index:195;">
+<input type="checkbox" id="Checkbox26" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="34"><label for="Checkbox26"></label></div>
+<div id="wb_Checkbox25" style="position:absolute;left:176px;top:567px;width:12px;height:14px;z-index:196;">
+<input type="checkbox" id="Checkbox25" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="35"><label for="Checkbox25"></label></div>
+<div id="wb_Checkbox29" style="position:absolute;left:110px;top:845px;width:12px;height:14px;z-index:197;">
+<input type="checkbox" id="Checkbox29" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="66"><label for="Checkbox29"></label></div>
+<div id="wb_Checkbox30" style="position:absolute;left:176px;top:845px;width:12px;height:14px;z-index:198;">
+<input type="checkbox" id="Checkbox30" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="67"><label for="Checkbox30"></label></div>
+<div id="wb_Checkbox33" style="position:absolute;left:42px;top:862px;width:12px;height:14px;z-index:199;">
+<input type="checkbox" id="Checkbox33" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="68"><label for="Checkbox33"></label></div>
+<div id="wb_Checkbox32" style="position:absolute;left:132px;top:862px;width:12px;height:14px;z-index:200;">
+<input type="checkbox" id="Checkbox32" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="69"><label for="Checkbox32"></label></div>
+<div id="wb_Checkbox31" style="position:absolute;left:177px;top:862px;width:12px;height:14px;z-index:201;">
+<input type="checkbox" id="Checkbox31" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="70"><label for="Checkbox31"></label></div>
+<table style="position:absolute;left:2px;top:1073px;width:839px;height:18px;z-index:202;" id="Table16">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">C. OTHER ACCOUNT LEVEL INFORMATION</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1093px;width:839px;height:18px;z-index:203;" id="Table17">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">1. Bank Details:&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">The bank account information of the Main Applicant as provided in the KYC Application Form shall be used.</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1113px;width:839px;height:20px;z-index:204;" id="Table18">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">2. Residential Status:&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">The Resident Status of the Main Applicant as provided in the KYC Application Form shall be used.</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1136px;width:842px;height:16px;z-index:205;" id="Table19">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;">3. </span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Basis of Remittance</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-style:italic;"> [Please tick (</span><span style="font-family:Wingdings;font-size:9.3px;line-height:11px;font-style:italic;">ü</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-style:italic;">) the appropriate boxes]</span></p></td>
+<td class="cell1"><p style="font-weight:bold;color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">Repatriable</span></p></td>
+<td class="cell2"><p style="font-weight:bold;color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">Non-Repatriable</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1155px;width:206px;height:54px;z-index:206;" id="Table20">
+<tr>
+<td class="cell0"><p>&nbsp;</p></td>
+</tr>
+</table>
+<table style="position:absolute;left:209px;top:1155px;width:178px;height:55px;z-index:207;" id="Table21">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;"> Non-resident Pakistani</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">Foreigner/ Pakistani Origin</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:388px;top:1153px;width:457px;height:57px;z-index:208;" id="Table22">
+<tr>
+<td class="cell0"><div id="wb_Checkbox47" style="display:inline-block;width:21px;height:21px;z-index:0;">
+<input type="checkbox" id="Checkbox47" name="Checkbox1" value="on" style="display:inline-block;" tabindex="2"><label for="Checkbox47"></label>
+</div>
+</td>
+<td class="cell1"><div id="wb_Checkbox48" style="display:inline-block;width:21px;height:21px;z-index:1;">
+<input type="checkbox" id="Checkbox48" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox48"></label>
+</div>
+</td>
+</tr>
+<tr>
+<td class="cell2"><div id="wb_Checkbox46" style="display:inline-block;width:21px;height:21px;z-index:2;">
+<input type="checkbox" id="Checkbox46" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox46"></label>
+</div>
+</td>
+<td class="cell1"><div id="wb_Checkbox49" style="display:inline-block;width:21px;height:21px;z-index:3;">
+<input type="checkbox" id="Checkbox49" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox49"></label>
+</div>
+</td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1211px;width:512px;height:86px;z-index:209;" id="Table23">
+<tr>
+<td class="cell0"><p style="font-size:11px;line-height:11.5px;font-weight:bold;">4. Zakat Status:</p>
+<p style="font-size:11px;line-height:11.5px;">&nbsp;</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">[</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">If, according to the Fiqh of the Applicant(s), Zakat is not deductible, then relevant Declaration on prescribed format shall be submitted by all the Applicant(s) with the concerned Participant/TREC Holder/Investor Accountholder]. Non-Muslims shall submit an affidavit.</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:513px;top:1209px;width:335px;height:90px;z-index:210;" id="Table24">
+<tr>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Please tick (</span><span style="font-family:Marlett;font-size:11px;line-height:12px;">a</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">) the appropriate box</span></p></td>
+</tr>
+<tr>
+<td class="cell1"><div id="wb_Checkbox50" style="display:inline-block;width:18px;height:16px;z-index:4;">
+<input type="checkbox" id="Checkbox50" name="Checkbox1" value="on" style="display:inline-block;" tabindex="3"><label for="Checkbox50"></label>
+</div>
+</td>
+<td class="cell2"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Muslim Zakat deductible</span></p></td>
+</tr>
+<tr>
+<td class="cell1"><div id="wb_Checkbox51" style="display:inline-block;width:18px;height:16px;z-index:5;">
+<input type="checkbox" id="Checkbox51" name="Checkbox1" value="on" style="display:inline-block;" tabindex="1"><label for="Checkbox51"></label>
+</div>
+</td>
+<td class="cell3"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Muslim Zakat non-deductible</span></p></td>
+</tr>
+<tr>
+<td class="cell1"><div id="wb_Checkbox52" style="display:inline-block;width:18px;height:16px;z-index:6;">
+<input type="checkbox" id="Checkbox52" name="Checkbox1" value="on" style="display:inline-block;" tabindex="2"><label for="Checkbox52"></label>
+</div>
+</td>
+<td class="cell2"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;"> Not Applicable</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:171px;top:1298px;width:676px;height:16px;z-index:211;" id="Table26">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">(a) Name of Nominee:</span></p></td>
+</tr>
+</table>
+<div id="wb_Text29" style="position:absolute;left:171px;top:1387px;width:217px;height:30px;z-index:212;">
+<p style="color:#000000;"><span style="color:#000000;">(C). CNIC&nbsp;&nbsp;&nbsp;&nbsp; SNIC&nbsp;&nbsp;&nbsp;&nbsp; NICOP&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p style="color:#000000;"><span style="color:#000000;">POC&nbsp;&nbsp;&nbsp;&nbsp; Passport No&nbsp;&nbsp;&nbsp;&nbsp; ARC&nbsp;&nbsp;&nbsp;&nbsp; </span></p></div>
+<div id="wb_Checkbox60" style="position:absolute;left:231px;top:1387px;width:12px;height:14px;z-index:213;">
+<input type="checkbox" id="Checkbox60" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;"><label for="Checkbox60"></label></div>
+<div id="wb_Checkbox61" style="position:absolute;left:281px;top:1387px;width:12px;height:14px;z-index:214;">
+<input type="checkbox" id="Checkbox61" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;"><label for="Checkbox61"></label></div>
+<div id="wb_Checkbox62" style="position:absolute;left:341px;top:1387px;width:12px;height:14px;z-index:215;">
+<input type="checkbox" id="Checkbox62" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;"><label for="Checkbox62"></label></div>
+<div id="wb_Checkbox63" style="position:absolute;left:340px;top:1403px;width:12px;height:14px;z-index:216;">
+<input type="checkbox" id="Checkbox63" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;"><label for="Checkbox63"></label></div>
+<div id="wb_Checkbox64" style="position:absolute;left:291px;top:1403px;width:12px;height:14px;z-index:217;">
+<input type="checkbox" id="Checkbox64" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;"><label for="Checkbox64"></label></div>
+<div id="wb_Checkbox65" style="position:absolute;left:198px;top:1403px;width:12px;height:14px;z-index:218;">
+<input type="checkbox" id="Checkbox65" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;"><label for="Checkbox65"></label></div>
+<div id="wb_Text30" style="position:absolute;left:186px;top:1419px;width:152px;height:13px;z-index:219;">
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">Please tick (</span><span style="font-family:Marlett;font-size:11px;line-height:12px;">a</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">) appropriate box]</span></p></div>
+<input type="number" id="Editbox96" style="position:absolute;left:368px;top:1398px;width:13px;height:14px;z-index:220;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox97" style="position:absolute;left:390px;top:1398px;width:13px;height:14px;z-index:221;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox98" style="position:absolute;left:412px;top:1398px;width:13px;height:14px;z-index:222;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox99" style="position:absolute;left:434px;top:1398px;width:13px;height:14px;z-index:223;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox104" style="position:absolute;left:456px;top:1398px;width:13px;height:14px;z-index:224;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox103" style="position:absolute;left:478px;top:1398px;width:13px;height:14px;z-index:225;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox102" style="position:absolute;left:500px;top:1398px;width:13px;height:14px;z-index:226;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox101" style="position:absolute;left:522px;top:1398px;width:13px;height:14px;z-index:227;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox100" style="position:absolute;left:544px;top:1398px;width:13px;height:14px;z-index:228;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox110" style="position:absolute;left:566px;top:1398px;width:13px;height:14px;z-index:229;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox109" style="position:absolute;left:588px;top:1398px;width:13px;height:14px;z-index:230;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox108" style="position:absolute;left:609px;top:1398px;width:13px;height:14px;z-index:231;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox107" style="position:absolute;left:629px;top:1398px;width:13px;height:14px;z-index:232;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox106" style="position:absolute;left:651px;top:1398px;width:13px;height:14px;z-index:233;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<input type="number" id="Editbox105" style="position:absolute;left:673px;top:1398px;width:13px;height:14px;z-index:234;" name="Editbox2" value="" maxlength="1" autocomplete="off" spellcheck="false">
+<table style="position:absolute;left:171px;top:1432px;width:676px;height:16px;z-index:235;" id="Table29">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">(d) </span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">Expiry date of CNIC /SNIC/ NICOP / ARC / POC:</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:170px;top:1448px;width:286px;height:84px;z-index:236;" id="Table30">
+<tr>
+<td class="cell0"><p style="font-size:11px;line-height:11.5px;">(e) Passport details: </p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">(In case of a foreigner or a Pakistani origin)</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1533px;width:844px;height:20px;z-index:237;" id="Table32">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">D. CDC </span><span style="font-family:Times New Roman;font-weight:bold;font-style:italic;">a</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">ccess: </span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">CDC provides </span><span style="text-decoration:underline;font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-weight:bold;font-style:italic;">FREE OF COST</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;"> services under CDC </span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;font-style:italic;">a</span><span style="font-family:Times New Roman;font-size:9.3px;line-height:10.5px;">ccess whereby Sub-account holders/Investor Accountholders can have real time access to their account related information.</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1554px;width:806px;height:26px;z-index:238;" id="Table33">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">1. Do you wish to subscribe to free of cost IVR/Web Service?</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;"> [</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">Please tick (</span><span style="font-family:Marlett;font-size:11px;line-height:12px;font-style:italic;">a</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">) the appropriate box]</span></p></td>
+<td class="cell1"><div id="wb_Checkbox66" style="display:inline-block;width:21px;height:21px;z-index:7;">
+<input type="checkbox" id="Checkbox66" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox66"></label>
+</div>
+</td>
+<td class="cell2"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Yes</span></p></td>
+<td class="cell3"><div id="wb_Checkbox67" style="display:inline-block;width:21px;height:21px;z-index:8;">
+<input type="checkbox" id="Checkbox67" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox67"></label>
+</div>
+</td>
+<td class="cell2"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">No</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1581px;width:854px;height:16px;z-index:239;" id="Table34">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">2. If you are subscribing to IVR and Web Service, please provide following details of your Contact Person:</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1642px;width:854px;height:30px;z-index:240;" id="Table36">
+<tr>
+<td class="cell0"><p style="font-family:Arial;font-size:11px;line-height:12px;color:#000000;"><span style="font-family:Times New Roman;font-weight:bold;color:#000000;">E. AUTHORIZATION UNDER SECTIONS 12 AND 24 OF THE CDC ACT EXCLUSIVELY FOR SETTLEMENT OF UNDERLYING TRADES, PLEDGE AND RECOVERY OF PAYMENTS, CHARGES AND LOSSES (FOR SUB-ACCOUNT ONLY)</span></p></td>
+</tr>
+</table>
+<div id="wb_Text31" style="position:absolute;left:1px;top:1673px;width:856px;height:228px;text-align:justify;z-index:241;">
+<p style="margin:0px 0px 4px 0px;font-size:11px;line-height:11.5px;">I/we the undersigned, hereby give my/our express authority to the Participant under Section 12 and Section 24 of the Central Depositories Act, 1997 to handle Book-entry Securities beneficially owned by me/us and entered in my/our Sub-Account maintained with the Participant for securities transactions that are exclusively meant for the following purposes:</p>
+<p style="margin:0px 0px 0px 48px;font-size:11px;line-height:11.5px;">a.	For the settlement of any underlying market transactions (trades) including off market transactions made by me/us from time to time; </p>
+<p style="margin:0px 0px 0px 48px;font-size:11px;line-height:11.5px;">b.	For pledge securities transactions with the Clearing House relating to any of my/our underlying market transactions (trades) to be settled through the Clearing House from time to time;</p>
+<p style="margin:0px 0px 0px 48px;font-size:11px;line-height:11.5px;">c.	For the recovery of payment against any underlying market purchase transactions made by me/us from time to time; </p>
+<p style="margin:0px 0px 0px 48px;font-size:11px;line-height:11.5px;">d.	Movement by me/us from time to time of my/our Book-entry Securities from my/our Sub-Account under the Main Account under the control of the Participant to my/our Sub-Account under another Main Account under the control of the Participant or to my/our Sub-Account under any Main Account which is under the control of another Participant or to my/our Investor Account;</p>
+<p style="margin:0px 0px 0px 48px;font-size:11px;line-height:11.5px;">e.	Securities transactions which has been made by way of a gift of Securities by me/us to my/our Family Members or other persons in accordance with the CDC Regulations from time to time;</p>
+<p style="margin:0px 0px 0px 48px;font-size:11px;line-height:11.5px;">f.	For the recovery of any charges or losses against any or all of the above transactions carried out by me/ us or services availed; and/or</p>
+<p style="margin:0px 0px 0px 48px;font-size:11px;line-height:11.5px;">g.	Delivery Transaction made by me/us for any other purposes as prescribed by the Commission from time to time.</p>
+<p style="font-size:11px;line-height:11.5px;">&nbsp;</p>
+<p style="font-size:11px;line-height:11.5px;">Specific authority on each occasion shall be given by me/us to the Participant for handling of Book-entry Securities beneficially owned by me/us for all other purposes as permitted under the applicable laws and regulations.</p>
+<p style="font-size:11px;line-height:11.5px;font-weight:bold;">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Note:</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;"> Please note that above shall serve as a standing authorization to the Participant for handling of Book-entry Securities owned by the undersigned Sub-Account Holder(s) and entered in his/her/their Sub-Account maintained with the Participant. Handling of Book-entry Securities for all other purposes should however require specific authority in writing from the undersigned Sub-Account Holder(s) in favour of the Participant. For handling of Book-entry Securities worth Rs. 500,000/- and above, the above mentioned specific authority shall be obtained on non-judicial stamp paper.</span></p></div>
+<div id="wb_Text32" style="position:absolute;left:15px;top:1295px;width:149px;height:189px;z-index:242;">
+<p style="font-size:11px;line-height:11.5px;font-weight:bold;">5. Particulars of nominee (Optional but if desired, nomination should only be made in case of sole individual and not joint account)</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">[Nomination may be made in terms of requirements of Section 79 of the Companies Act, 2017, which inter alia requires that person nominated as aforesaid shall not be a person other than the following relatives of the Investor Accountholder/Sub-Account Holder, namely: a spouse, father, mother, brother, sister and son or daughter.]</span></p></div>
+<table style="position:absolute;left:1px;top:1908px;width:854px;height:14px;z-index:243;" id="Table25">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">F. OPERATING INSTRUCTIONS</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:1987px;width:296px;height:102px;z-index:244;" id="Table37">
+<tr>
+<td class="cell0"><p style="font-size:11px;line-height:11.5px;font-weight:bold;"><span style="letter-spacing:1px;">1. Signatory(ies) to give instruction to the </span>Participant/TREC Holder <span style="letter-spacing:1px;">pertaining to the operations </span>of the Investor Account / Sub-Account / Trading Account.</p>
+<p style="font-size:8px;line-height:7px;">&nbsp;</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">(</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">Please specify Investor account, sub- account and trading account operating instructions in the relevant column along with names&nbsp; and specimen signatures of authorised signatories</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">)</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:299px;top:1987px;width:547px;height:16px;z-index:245;" id="Table38">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Names of Signatory(ies)</span></p></td>
+<td class="cell1"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Specimen Signatures</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:299px;top:2004px;width:343px;height:85px;z-index:246;" id="Table39">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">(a)</span></p></td>
+<td class="cell1"><input type="text" id="Editbox120" style="display:block;width: 100%;height:20px;z-index:9;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">(b)</span></p></td>
+<td class="cell2"><input type="text" id="Editbox116" style="display:block;width: 100%;height:20px;z-index:10;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+<tr>
+<td class="cell3"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">(C)</span></p></td>
+<td class="cell2"><input type="text" id="Editbox117" style="display:block;width: 100%;height:20px;z-index:11;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">(d)</span></p></td>
+<td class="cell2"><input type="text" id="Editbox119" style="display:block;width: 100%;height:20px;z-index:12;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<table style="position:absolute;left:641px;top:2003px;width:209px;height:87px;z-index:247;" id="Table40">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2090px;width:296px;height:70px;z-index:248;" id="Table41">
+<tr>
+<td class="cell0"><p style="margin:0px 0px 0px 6px;font-size:11px;line-height:11.5px;font-weight:bold;">2. Investor Account/Sub-Account Operating Instructions in writing:</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">&nbsp;&nbsp;&nbsp; [Please (</span><span style="font-family:Wingdings;font-size:11px;line-height:12px;">ü</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">) appropriate box]</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:299px;top:2091px;width:548px;height:69px;z-index:249;" id="Table42">
+<tr>
+<td class="cell0"><div id="wb_Checkbox68" style="display:inline-block;width:18px;height:16px;z-index:13;">
+<input type="checkbox" id="Checkbox68" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox68"></label>
+</div>
+</td>
+<td class="cell1"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:normal;">Singly (Either or Survivor)</span></p></td>
+<td class="cell2"><div id="wb_Checkbox73" style="display:inline-block;width:18px;height:16px;z-index:14;">
+<input type="checkbox" id="Checkbox73" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox73"></label>
+</div>
+</td>
+<td class="cell3"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Mother</span></p></td>
+</tr>
+<tr>
+<td class="cell4"><div id="wb_Checkbox69" style="display:inline-block;width:18px;height:16px;z-index:15;">
+<input type="checkbox" id="Checkbox69" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox69"></label>
+</div>
+</td>
+<td class="cell5"><p style="font-size:11px;line-height:11.5px;">Jointly [any] __________</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">(Please mention the relevant numbers of the signatories)</span></p></td>
+<td class="cell6"><p>&nbsp;</p></td>
+<td class="cell7"><p style="font-weight:bold;">&nbsp;</p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2161px;width:296px;height:70px;z-index:250;" id="Table43">
+<tr>
+<td class="cell0"><p style="margin:0px 0px 0px 6px;font-size:11px;line-height:11.5px;font-weight:bold;">3. Investor Account/Sub-Account Operating Instructions in writing:</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">&nbsp;&nbsp;&nbsp; [Please (</span><span style="font-family:Wingdings;font-size:11px;line-height:12px;">ü</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">) appropriate box]</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:299px;top:2162px;width:548px;height:69px;z-index:251;" id="Table44">
+<tr>
+<td class="cell0"><div id="wb_Checkbox70" style="display:inline-block;width:18px;height:16px;z-index:16;">
+<input type="checkbox" id="Checkbox70" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox70"></label>
+</div>
+</td>
+<td class="cell1"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:normal;">Singly (Either or Survivor)</span></p></td>
+<td class="cell2"><div id="wb_Checkbox72" style="display:inline-block;width:18px;height:16px;z-index:17;">
+<input type="checkbox" id="Checkbox72" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox72"></label>
+</div>
+</td>
+<td class="cell3"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Mother</span></p></td>
+</tr>
+<tr>
+<td class="cell4"><div id="wb_Checkbox71" style="display:inline-block;width:18px;height:16px;z-index:18;">
+<input type="checkbox" id="Checkbox71" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox71"></label>
+</div>
+</td>
+<td class="cell5"><p style="font-size:11px;line-height:11.5px;">Jointly [any] __________</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">(Please mention the relevant numbers of the signatories)</span></p></td>
+<td class="cell6"><p>&nbsp;</p></td>
+<td class="cell7"><p style="font-weight:bold;">&nbsp;</p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2232px;width:844px;height:16px;z-index:252;" id="Table45">
+<tr>
+<td class="cell0"><p style="font-family:Arial;color:#000000;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;color:#000000;">G. SIGNATURES</span></p></td>
+</tr>
+</table>
+<div id="wb_Text33" style="position:absolute;left:9px;top:2257px;width:118px;height:15px;z-index:253;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Name of Applicant:</span></div>
+<div id="wb_Text34" style="position:absolute;left:9px;top:2297px;width:177px;height:15px;z-index:254;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Name of Joint Applicant No 1:</span></div>
+<div id="wb_Text35" style="position:absolute;left:9px;top:2339px;width:181px;height:15px;z-index:255;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Name of Joint Applicant No 2:</span></div>
+<div id="wb_Text36" style="position:absolute;left:9px;top:2381px;width:177px;height:15px;z-index:256;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Name of Joint Applicant No 3:</span></div>
+<div id="wb_Text37" style="position:absolute;left:271px;top:2251px;width:49px;height:15px;z-index:257;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Date:</span></div>
+<input type="text" id="Editbox121" style="position:absolute;left:315px;top:2250px;width:104px;height:10px;z-index:258;" name="Editbox2" value="" spellcheck="false">
+<div id="wb_Text38" style="position:absolute;left:272px;top:2273px;width:41px;height:15px;z-index:259;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Place:</span></div>
+<input type="text" id="Editbox122" style="position:absolute;left:315px;top:2271px;width:104px;height:10px;z-index:260;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox123" style="position:absolute;left:315px;top:2313px;width:104px;height:10px;z-index:261;" name="Editbox2" value="" spellcheck="false">
+<div id="wb_Text39" style="position:absolute;left:274px;top:2318px;width:41px;height:15px;z-index:262;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Place:</span></div>
+<div id="wb_Text40" style="position:absolute;left:273px;top:2296px;width:49px;height:15px;z-index:263;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Date:</span></div>
+<input type="text" id="Editbox124" style="position:absolute;left:315px;top:2292px;width:104px;height:10px;z-index:264;" name="Editbox2" value="" spellcheck="false">
+<div id="wb_Text41" style="position:absolute;left:274px;top:2338px;width:49px;height:15px;z-index:265;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Date:</span></div>
+<input type="text" id="Editbox125" style="position:absolute;left:315px;top:2334px;width:104px;height:10px;z-index:266;" name="Editbox2" value="" spellcheck="false">
+<div id="wb_Text42" style="position:absolute;left:275px;top:2360px;width:41px;height:15px;z-index:267;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Place:</span></div>
+<input type="text" id="Editbox126" style="position:absolute;left:315px;top:2355px;width:104px;height:10px;z-index:268;" name="Editbox2" value="" spellcheck="false">
+<div id="wb_Text44" style="position:absolute;left:275px;top:2380px;width:49px;height:15px;z-index:269;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Date:</span></div>
+<input type="text" id="Editbox127" style="position:absolute;left:315px;top:2377px;width:104px;height:10px;z-index:270;" name="Editbox2" value="" spellcheck="false">
+<div id="wb_Text45" style="position:absolute;left:276px;top:2402px;width:41px;height:15px;z-index:271;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Place:</span></div>
+<input type="text" id="Editbox128" style="position:absolute;left:315px;top:2399px;width:104px;height:10px;z-index:272;" name="Editbox2" value="" spellcheck="false">
+<table style="position:absolute;left:427px;top:2249px;width:425px;height:171px;z-index:273;" id="Table46">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td class="cell1"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td class="cell1"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td class="cell1"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+<tr>
+<td class="cell2"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td class="cell3"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2421px;width:844px;height:32px;z-index:274;" id="Table47">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">I/we hereby agree to admit the Applicant(s) as the Investor Accountholder(s)/Sub-Account Holder(s) in terms of the enclosed Terms and Conditions as amended from time to time and shall abide by the same in respect of opening, maintenance and operation of such Investor Account/Sub-Account.</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2454px;width:844px;height:22px;z-index:275;" id="Table48">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Name of Participant/TREC Holder:</span></p></td>
+<td class="cell1"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Date:</span></p></td>
+<td class="cell2"><input type="text" id="Editbox129" style="display:block;width: 100%;height:20px;z-index:19;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2478px;width:845px;height:26px;z-index:276;" id="Table49">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Participant’s/TREC Holder’s Seal &amp; Signature: </span></p></td>
+<td class="cell1"><input type="text" id="Editbox130" style="display:block;width: 100%;height:23px;z-index:20;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2504px;width:843px;height:28px;z-index:277;" id="Table50">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Witnesses:</span></p></td>
+<td class="cell1"><input type="text" id="Editbox131" style="display:block;width: 100%;height:26px;z-index:21;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<table style="position:absolute;left:2px;top:2531px;width:843px;height:28px;z-index:278;" id="Table51">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">1. Name: </span></p></td>
+<td class="cell1"><input type="text" id="Editbox132" style="display:block;width: 100%;height:26px;z-index:22;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<input type="text" id="Editbox133" style="position:absolute;left:380px;top:2562px;width:18px;height:16px;z-index:279;" name="Editbox2" value="" spellcheck="false">
+<table style="position:absolute;left:2px;top:2560px;width:369px;height:28px;z-index:280;" id="Table52">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td class="cell1"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+<td class="cell2"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">CNIC No: </span></p></td>
+</tr>
+</table>
+<input type="text" id="Editbox134" style="position:absolute;left:409px;top:2562px;width:18px;height:16px;z-index:281;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox135" style="position:absolute;left:438px;top:2562px;width:18px;height:16px;z-index:282;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox136" style="position:absolute;left:467px;top:2562px;width:18px;height:16px;z-index:283;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox137" style="position:absolute;left:496px;top:2562px;width:18px;height:16px;z-index:284;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox138" style="position:absolute;left:525px;top:2562px;width:18px;height:16px;z-index:285;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox139" style="position:absolute;left:554px;top:2562px;width:18px;height:16px;z-index:286;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox140" style="position:absolute;left:583px;top:2562px;width:18px;height:16px;z-index:287;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox141" style="position:absolute;left:612px;top:2562px;width:18px;height:16px;z-index:288;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox142" style="position:absolute;left:641px;top:2562px;width:18px;height:16px;z-index:289;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox143" style="position:absolute;left:670px;top:2562px;width:18px;height:16px;z-index:290;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox144" style="position:absolute;left:699px;top:2562px;width:18px;height:16px;z-index:291;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox145" style="position:absolute;left:728px;top:2562px;width:18px;height:16px;z-index:292;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox146" style="position:absolute;left:757px;top:2562px;width:18px;height:16px;z-index:293;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox147" style="position:absolute;left:786px;top:2562px;width:18px;height:16px;z-index:294;" name="Editbox2" value="" spellcheck="false">
+<table style="position:absolute;left:2px;top:2616px;width:369px;height:28px;z-index:295;" id="Table54">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td class="cell1"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span></p></td>
+<td class="cell2"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">CNIC No: </span></p></td>
+</tr>
+</table>
+<input type="text" id="Editbox149" style="position:absolute;left:380px;top:2619px;width:18px;height:16px;z-index:296;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox150" style="position:absolute;left:409px;top:2619px;width:18px;height:16px;z-index:297;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox151" style="position:absolute;left:438px;top:2619px;width:18px;height:16px;z-index:298;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox152" style="position:absolute;left:467px;top:2619px;width:18px;height:16px;z-index:299;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox153" style="position:absolute;left:496px;top:2619px;width:18px;height:16px;z-index:300;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox154" style="position:absolute;left:525px;top:2619px;width:18px;height:16px;z-index:301;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox155" style="position:absolute;left:554px;top:2619px;width:18px;height:16px;z-index:302;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox156" style="position:absolute;left:583px;top:2619px;width:18px;height:16px;z-index:303;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox157" style="position:absolute;left:612px;top:2619px;width:18px;height:16px;z-index:304;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox158" style="position:absolute;left:641px;top:2619px;width:18px;height:16px;z-index:305;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox159" style="position:absolute;left:670px;top:2619px;width:18px;height:16px;z-index:306;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox160" style="position:absolute;left:699px;top:2619px;width:18px;height:16px;z-index:307;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox161" style="position:absolute;left:728px;top:2619px;width:18px;height:16px;z-index:308;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox162" style="position:absolute;left:757px;top:2619px;width:18px;height:16px;z-index:309;" name="Editbox2" value="" spellcheck="false">
+<input type="text" id="Editbox163" style="position:absolute;left:786px;top:2619px;width:18px;height:16px;z-index:310;" name="Editbox2" value="" spellcheck="false">
+<table style="position:absolute;left:2px;top:2588px;width:843px;height:28px;z-index:311;" id="Table53">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">1. Name: </span></p></td>
+<td class="cell1"><input type="text" id="Editbox148" style="display:block;width: 100%;height:26px;z-index:23;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<div id="wb_Text43" style="position:absolute;left:2px;top:2646px;width:860px;height:164px;z-index:312;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Enclosures*:<br>1. Copy of valid CNIC/SNIC/NICOP/ARC/POC/Passport of the Applicants / Joint Applicants / nominee(s) and Attorney (as the case may be).<br>2. Copy of Power of Attorney (if applicable), duly attested by notary public (suggested format as annexure). <br>3. Copy of Zakat Declaration of the Applicant and the Joint Applicant (if applicable). In case of Non-Muslim, an affidavit shall be submitted.<br>4. Terms &amp; Conditions of relevant service provider, as applicable.<br><br>5. Specimen Signature Card (for Investor Accountholder(s) only) <br><br>*Note: Non-resident/ foreigners shall submit the documents duly attested by either notary public or Consul General of Pakistan having jurisdiction over the Applicant(s).<br></span></div>
+<input type="text" id="Editbox111" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:299px;top:613px;width:210px;height:10px;z-index:313;" name="Editbox111" value="" tabindex="58" spellcheck="false">
+<table style="position:absolute;left:2px;top:726px;width:838px;height:23px;z-index:314;" id="Table8">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="font-weight:bold;color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">4. Permanent Address: </span><span style="font-family:Times New Roman;font-size:8px;line-height:9.5px;">[The address should be of the Main Applicant]</span></p></td>
+<td class="cell1"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">Please use the details as provide in the KYC Application Form and enter the same in the CDS</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:0px;top:1599px;width:845px;height:22px;z-index:315;" id="Table35">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">(a) Date of Birth</span></p></td>
+<td class="cell1"><input type="date" id="Editbox115" onkeyup="this.value = this.value.toUpperCase();" style="display:inline-block;width:726px;height:20px;z-index:24;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<table style="position:absolute;left:0px;top:1621px;width:843px;height:22px;z-index:316;" id="Table55">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">(b) Mother’s Maiden Name:</span></p></td>
+<td class="cell1"><p>&nbsp;</p></td>
+</tr>
+</table>
+<div id="wb_Text1" style="position:absolute;left:3px;top:189px;width:840px;height:15px;z-index:317;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">I/We hereby apply for opening of my/our following account [<u>please tick (</u>&nbsp;&nbsp;&nbsp; <u>) only one relevant box</u>] with <u>Zafar Securities (Pvt). Ltd</u></span></div>
+<div id="wb_Checkbox9" style="position:absolute;left:36px;top:293px;width:12px;height:14px;z-index:318;">
+<input type="checkbox" id="Checkbox9" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" disabled><label for="Checkbox9"></label></div>
+<div id="wb_Text5" style="position:absolute;left:3px;top:202px;width:837px;height:106px;z-index:319;">
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:18px;">1.&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <strong>Trading &amp; Sub-Account</strong> [Opening of Account with Securities Broker for trading, custody and settlement]&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br>2.&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <strong>Investor Account with CDC </strong>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 3.&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <strong>Sub-Account with Participant</strong><br>4.&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <strong>Trading Account </strong>[Opening of Account with a Securities Broker for trading purpose only]<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span><span style="color:#000000;font-family:Arial;font-size:11px;line-height:17px;"><strong>Note: </strong>In case applicant chooses option # 4 above, then he/she shall choose any of the following:</span><span style="color:#000000;font-family:Arial;font-size:13px;line-height:18px;"><br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Subscribe to Direct Settlement Services (DSS) with CDC&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Subscribe to National Custodial Services (NCS) with NCCPL<br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <strong>Others (please specify e.g. CCM/ NBCM)</strong> _______________________________</span></div>
+<div id="wb_Checkbox10" style="position:absolute;left:381px;top:221px;width:12px;height:14px;z-index:320;">
+<input type="checkbox" id="Checkbox10" name="Checkbox1" value="on" checked style="position:absolute;left:0;top:0;" disabled><label for="Checkbox10"></label></div>
+<input type="TEXT" id="Editbox30" onkeypress='validate(event)'onkeyup="moveCursor(this,'Editbox31')"style="position:absolute;left:651px;top:556px;width:25px;height:16px;z-index:321;" name="Editbox2" value="" maxlength="1" tabindex="47" autocomplete="off" spellcheck="false">
+<table style="position:absolute;left:2px;top:2809px;width:848px;height:16px;z-index:322;" id="Table56">
+<tr>
+<td class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">H. FOR THE USE OF PARTICIPANT/TREC HOLDER ONLY</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:1px;top:2827px;width:854px;height:124px;z-index:323;" id="Table58">
+<tr>
+<td colspan="7" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Particulars of Customer Relationship Form verified by :</span></p></td>
+</tr>
+<tr>
+<td class="cell1"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Application: </span></p></td>
+<td class="cell2"><div id="wb_Checkbox74" style="display:inline-block;width:18px;height:16px;z-index:25;">
+<input type="checkbox" id="Checkbox74" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox74"></label>
+</div>
+</td>
+<td class="cell3"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Approved</span></p></td>
+<td class="cell4"><div id="wb_Checkbox75" style="display:inline-block;width:18px;height:16px;z-index:26;">
+<input type="checkbox" id="Checkbox75" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox75"></label>
+</div>
+</td>
+<td class="cell5"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Rejected</span></p></td>
+<td class="cell6"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature: (Authorized signatory)/Stamp</span></p></td>
+<td class="cell7"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Date:</span></p></td>
+</tr>
+<tr>
+<td colspan="7" class="cell8"><p style="font-family:Arial;color:#000000;"><span style="font-family:arial;color:#000000;">&nbsp;</span><span style="font-family:'times new roman';font-size:11px;line-height:12px;color:#000000;">Investor Account/Sub-Account no. issued:</span><span style="font-family:arial;color:#000000;">&nbsp;</span></p></td>
+</tr>
+<tr>
+<td colspan="7" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Investor Accoun</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">t</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">/Sub-Account /Trading Account opened by:</span></p></td>
+</tr>
+<tr>
+<td colspan="5" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Saved by:</span></p></td>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Posted by:</span></p></td>
+</tr>
+<tr>
+<td colspan="3" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td colspan="2" class="cell0"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Date:</span></p></td>
+<td class="cell9"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Signature:</span></p></td>
+<td class="cell9"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Date:</span></p></td>
+</tr>
+<tr>
+<td colspan="7" class="cell10"><p style="font-family:Arial;color:#000000;"><span style="font-family:'times new roman';font-size:11px;line-height:12px;color:#000000;">Remarks: </span><span style="font-family:'times new roman';font-size:11px;line-height:12px;font-style:italic;color:#000000;">(if any)</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:1px;top:2952px;width:855px;height:135px;z-index:324;" id="Table59">
+<tr>
+<td colspan="2" class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">ACKNOWLEDGEMENT RECEIPT</span></p></td>
+</tr>
+<tr>
+<td class="cell1"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Application No:</span></p></td>
+<td class="cell2"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Date of receipt:</span></p></td>
+</tr>
+<tr>
+<td colspan="2" class="cell3"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">I/We hereby confirm and acknowledge the receipt of duly filled and signed Customer Relationship Form from the following Applicant:</span></p></td>
+</tr>
+<tr>
+<td class="cell4"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">[Insert Name of Applicant(s)]</span></p></td>
+<td class="cell5"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">Participant’s / TREC Holder Seal &amp; Signature:</span></p></td>
+</tr>
+<tr>
+<td class="cell5"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">1.</span></p></td>
+<td class="cell6"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class="cell5"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">2.</span></p></td>
+<td class="cell6"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class="cell5"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">3.</span></p></td>
+<td class="cell6"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class="cell5"><p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-weight:bold;">4.</span></p></td>
+<td class="cell6"><p>&nbsp;</p></td>
+</tr>
+</table>
+<table style="position:absolute;left:1px;top:3092px;width:856px;height:30px;z-index:325;" id="Table60">
+<tr>
+<td class="cell0"><p style="font-size:11px;line-height:11.5px;font-weight:bold;">TERMS AND CONDITIONS </p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Please read and understand the Terms and Conditions before signing and executing this form</span></p></td>
+</tr>
+</table>
+<div id="wb_Text18" style="position:absolute;left:1px;top:3125px;width:856px;height:22px;text-align:justify;z-index:326;">
+<p><span style="font-size:9.3px;line-height:11.5px;">These Terms and Conditions shall constitute a Contract between the Parties hereto. This Contract shall govern opening, maintenance and operations of Trading Account, CDC Sub-Account(s) and sharing of UIN and KYC information to/from NCCPL and ancillary matters connected therewith.</span></p></div>
+<table style="position:absolute;left:170px;top:1315px;width:282px;height:72px;z-index:327;" id="Table27">
+<tr>
+<td class="cell0"><p style="font-size:11px;line-height:11.5px;">(b) Relationship with Main Applicant:</p>
+<p style="font-family:Arial;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">[Please tick (</span><span style="font-family:Wingdings 2;font-size:11px;line-height:12px;font-style:italic;">P</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;font-style:italic;">) appropriate box]</span></p></td>
+</tr>
+</table>
+<table style="position:absolute;left:456px;top:1449px;width:389px;height:85px;z-index:328;" id="Table31">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Passport Number:</span></p></td>
+<td class="cell1"><input type="text" id="Editbox114" onkeyup="this.value = this.value.toUpperCase();" style="display:block;width: 100%;height:20px;z-index:27;" name="Editbox114" value="" spellcheck="false">
+</td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Place of Issue:</span></p></td>
+<td class="cell1"><input type="text" id="Editbox112" onkeyup="this.value = this.value.toUpperCase();" style="display:block;width: 100%;height:20px;z-index:28;" name="Editbox112" value="" spellcheck="false">
+</td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Date of Issue:</span></p></td>
+<td class="cell1"><input type="date" id="Editbox113" style="display:block;width: 100%;height:20px;z-index:29;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Date of Expiry:</span></p></td>
+<td class="cell1"><input type="date" id="Editbox45" style="display:block;width: 100%;height:20px;z-index:30;" name="Editbox2" value="" spellcheck="false">
+</td>
+</tr>
+</table>
+<input type="text" id="Editbox118" onkeyup="this.value = this.value.toUpperCase();" style="position:absolute;left:139px;top:1622px;width:706px;height:10px;z-index:329;" name="Editbox2" value="" spellcheck="false">
+<div id="wb_Text27" style="position:absolute;left:9px;top:943px;width:183px;height:30px;z-index:330;">
+<p style="color:#000000;"><span style="color:#000000;">2. CNIC&nbsp;&nbsp;&nbsp;&nbsp; SNIC&nbsp;&nbsp;&nbsp;&nbsp; NICOP&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p style="color:#000000;"><span style="color:#000000;">POC&nbsp;&nbsp;&nbsp;&nbsp; Passport No&nbsp;&nbsp;&nbsp;&nbsp; ARC&nbsp;&nbsp;&nbsp;&nbsp; </span></p></div>
+<div id="wb_Checkbox34" style="position:absolute;left:108px;top:942px;width:12px;height:14px;z-index:331;">
+<input type="checkbox" id="Checkbox34" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="88"><label for="Checkbox34"></label></div>
+<div id="wb_Checkbox35" style="position:absolute;left:58px;top:941px;width:12px;height:14px;z-index:332;">
+<input type="checkbox" id="Checkbox35" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="87"><label for="Checkbox35"></label></div>
+<div id="wb_Checkbox36" style="position:absolute;left:173px;top:942px;width:12px;height:14px;z-index:333;">
+<input type="checkbox" id="Checkbox36" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="89"><label for="Checkbox36"></label></div>
+<div id="wb_Checkbox37" style="position:absolute;left:173px;top:959px;width:12px;height:14px;z-index:334;">
+<input type="checkbox" id="Checkbox37" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="92"><label for="Checkbox37"></label></div>
+<div id="wb_Checkbox38" style="position:absolute;left:129px;top:958px;width:12px;height:14px;z-index:335;">
+<input type="checkbox" id="Checkbox38" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="91"><label for="Checkbox38"></label></div>
+<div id="wb_Checkbox39" style="position:absolute;left:39px;top:958px;width:12px;height:14px;z-index:336;">
+<input type="checkbox" id="Checkbox39" name="Checkbox1" value="on" style="position:absolute;left:0;top:0;" tabindex="90"><label for="Checkbox39"></label></div>
+<div id="wb_Text46" style="position:absolute;left:1px;top:3153px;width:856px;height:1889px;z-index:337;">
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="text-decoration:underline;font-size:13px;line-height:16px;font-weight:bold;color:#000000;">GENERAL TERMS AND CONDITIONS </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">1. All Trades, Transactions, including non-Exchange Transactions, Derivative Contracts and deals (jointly referred to as “Transactions”) between the Parties and Clearing and Settlement thereof and opening, maintenance and operations of Sub-Account in the CDS shall be subject to the Securities Act, 2015, Central Depositories Act, 1997, Pakistan Stock Exchange Limited (PSX) Regulations, Central Depository Company of Pakistan Limited (CDC) Regulations, CKO Regulations, 2017, National Clearing Company of Pakistan Limited (NCCPL) Regulations and the Securities Brokers (Licensing and Operations) Regulation, 2016 including Procedures, Manuals, Polices, Guidelines, Circulars, Directives, and Notifications issued and as amended) thereunder by the Securities and Exchange Commission of Pakistan (SECP), PSX, CDC or NCCPL from time to time. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">2. The information provided in KYC application form and/or CRF shall be in addition to and not in derogation of the requirements prescribed under Anti-Money Laundering and Countering Financing of Terrorism Regulations, 2018. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">3. The Securities Broker/Participant shall ensure provision of copies of all the relevant laws, rules and regulations at its office for access to the Sub-Account Holder(s)/Customer(s) during working hours. The Securities Broker/Participant shall ensure that its website contains hyperlinks to the websites/pages on the website of PSX, CDC, NCCPL and the SECP displaying above said regulatory framework for reference of the Customers. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">4. In case of a Joint Account, all obligations and liabilities of the Applicants under these Terms and Conditions shall be joint and several. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">5. These Terms and Conditions shall be binding on the nominee, legal representative, successors in interest and/or permitted assigns of the respective Parties hereto.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 6. The Securities Broker/Participant shall provide a list of its Registered Offices and Representatives authorized and employees designated to deal with the Sub-Account Holder(s)/Customer(s) along with their authorized mobile/landline/fax number(s), email and registered addresses. Any change(s) therein shall be intimated in writing to the Sub-Account Holder(s)/Customer(s) with immediate effect.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 7. Subject to applicable laws, the Securities Broker/Participant shall maintain strict confidentiality of the Customer related information and shall not disclose the same to any third party. However, in case the SECP, PSX, CDC or any competent authority under the law, as the case may be, requires any such information, the Securities Broker/ Participant shall be obliged to disclose the same for which the Customer shall not raise any objection whatsoever.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 8. The Securities Broker/Participant shall independently verify any of the Customer’s related information provided in this Form and under the relevant laws, rules and regulations for the purpose of KYC.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 9. In case of any change in the Customer’s related information provided in this Form, the Customer shall provide necessary details to the Participant/Securities Broker. Upon receipt of instructions from the Customer, the Participant/Securities Broker shall give effect to such changes in the manner prescribed under the relevant regulations. The Participant/Securities Broker shall have the right to incorporate any change(s) in the Sub-Account Holder(s)/Customer’s information in the CDS as sent by NCCPL as CKO and that such change(s) shall be deemed to have been authorized by the Sub-Account Holder(s)/Customer(s). In case of any change in the Participant’s/Securities Broker’s address or contact numbers or any other related information, the Securities Broker/Participant shall immediately notify the Sub-Account Holder(s)/Customer(s). </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">10. Any change in this Form or these Terms and Conditions by virtue of any changes in the aforesaid legal frameworks shall be deemed to have been incorporated and modified the rights and duties of the Parties hereto. Such change(s) shall be immediately communicated by the Securities Broker/Participant to the Sub-Account Holder(s)/Customer(s).</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 11. The Securities Broker/Participant and the Customer shall be entitled to terminate this Contract without giving any reasons to each other after giving notice in writing of not less than one month to the other Party. Notwithstanding any such termination, all rights, liabilities and obligations of the Parties arising out of or in respect of Transactions entered into prior to the termination of this Contract shall continue to subsist and vest in /be binding on the respective Parties or his /her/ its respective heirs, executors, administrators, legal representatives or successors in interest and permissible assigns, as the case may be. Closure of Sub-Account of the Customer under this clause shall be subject to the condition that neither any corporate action is pending at that point of time in connection with any Book-entry Securities in the Sub-Account nor any Book-Entry Securities are in Pledged Position and that the outstanding dues, if any, payable by any Party to the other Party is cleared and that the Customer has transferred or withdrawn all the BookEntry Securities from his/her Sub-Account.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 12. Where applicable, the terms “Sub-Account Holder” and “Participant” used in this Form shall include the “Customer” and “Securities Broker/TRE Certificate Holder” respectively. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">13. The Securities Broker/Participant should ensure due protection to the Sub-Account Holder / Customer regarding rights to dividend, rights or bonus shares etc. in respect of transactions routed through it and not do anything which is likely to harm the interest of the Sub-Account Holder with/from whom it may have had transactions in securities.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 14. The Participant/Securities Broker shall ensure that duly filled in and signed copy of this form along with the acknowledgement receipt is provided to the Sub-Account Holder. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="text-decoration:underline;font-size:13px;line-height:16px;font-weight:bold;color:#000000;">TERMS AND CONDITIONS FOR OPENING AND OPERATIONS OF CDC SUB-ACCOUNT </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">The Terms and Conditions set herein below shall govern the Sub-Account forming part of the Account Family of the CDS Participant Account of the Participant, which shall be binding on the Sub-Account Holder as well as the Participant:</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 1. The Registration Details and such other information specified by the Applicant in this form for opening of the Sub-Account shall appear in the Sub-Account to be established by the Participant in the CDS who shall ensure the correctness and completeness of the same. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">2. The Book-entry Securities owned by the Sub-Account Holder shall be exclusively entered in the Sub-Account of such Sub-Account Holder. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">3. Transfer, Pledge and Withdrawal of Book-entry Securities entered in the Sub-Account of the Sub-Account Holder shall only be made from time to time in accordance with the authorization given by the Sub-Account Holder to the Participant in Part (E) above pursuant to Section 12 and 24 of the Central Depositories Act, 1997. Such authorization shall constitutes the congregated / entire authorizations by the Sub-Account Holder(s) in favour of the Participant and supersedes and cancels all prior authorizations (oral, written or electronic) including any different, conflicting or additional terms which appear on any agreement or form the Sub-Account Holder(s) has executed in favour of the Participant. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">4. Participant shall be liable to give due and timely effect to the instructions of the Sub-Account Holder given in terms of the above-referred authorization with respect to transfer, pledge and withdrawal of Book-entry Securities entered in his/her Sub-Account under the control of the Participant. Such instructions, among other matters, may include closing of Sub-Account.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 5. Participant shall send within 10 days of end of each quarter Account Balance statement to the Sub-Account Holder without any fee or charge showing the number of every Book-entry Security entered in his/her Sub-Account as of the end of the preceding quarter. Such Account Balance statement shall be generated from the CDS. Further, the Sub-Account Holder may request for such statement (including Account Activity reports) from the Participant at any time on payment of a fee on cost basis as prescribed by the Participant. The Participant shall be liable to provide such report/statement to the Sub-Account Holder within 3 Business Days from the date of receipt of such request, with or without charges.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 6. In consideration for the facilities and services provided to the Sub-Account Holder by the Participant, the Sub-Account Holder shall pay fees and charges to the Participant as applicable for availing such facilities and services under the Central Depositories Act, 1997, the Regulations and these Terms &amp; Conditions. In case of outstanding payment against any underlying market purchase transaction, charges and/or losses against the Sub-Account Holder, the Participant shall have the right, subject to Clause 3 above and under prior intimation to the Sub-Account Holder to clear the payment, charges and/or losses (including any shortfall in margin requirements) within the reasonable time prescribed by the Participant, to dispose off the necessary number of Book-entry Securities of the Sub-Account Holder through market-based or Negotiated Deal Market sell transaction and apply the net proceeds thereof towards the adjustment of such outstanding payment, charges and/or losses.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 7. Where admission of Participant to the CDS is suspended or terminated by the CDC, the Sub-Account Holder shall have the right, subject to the Regulations and the Procedures made thereunder, to request CDC to change his/her Controlling Account Holder and Participant shall extend full cooperation to the Sub-Account Holder in every regard, without prejudice to its right of recovery of any dues or receivable from the Sub-Account Holder.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 8. The provision of services as provided for hereunder shall not constitute Participant as trustee and the Participant shall have no trust or other obligation in respect of the Book Entry Securities except as agreed by the Participant separately in writing. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">9. The Participant is not acting under this application form as Investment Manager or Investment Advisor to the Sub-Account Holder(s). </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">TERMS AND CONDITIONS FOR TRADING ACCOUNT </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">1. In case any dispute in connection with the Transaction between the Securities Broker and the Customer is not settled amicably, either Party may refer the same to the Arbitration in accordance with the arbitration procedures prescribed in PSX Regulations. The decision of arbitrators shall be binding on both the Parties subject to their rights of appeal in the manner provided in PSX Regulations, if exercised. The name and other relevant particulars of the Customer shall be placed on PSX’s website accessible to Securities Brokers if the Customer fails or refuses to abide by or carryout any arbitration award passed against him/her and the Customer shall have no objection to the same. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">2. The assets deposited as margin by a Customer with the Securities Broker shall only be used by the Securities Broker for the purposes of dealing in securities through PSX on behalf of such Customer other than as authorized by the Customer in writing in the manner prescribed under the relevant regulations. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">3. The Securities Broker may deposit unutilized funds of the Customers in a separate profit-bearing bank account and shall distribute profit to the Customers out of total profit offered by bank(s) on such funds, unless specified otherwise in writing by the Customer.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 4. The Securities Broker shall be authorized to act on the instructions of the Customers given through any of the following modes of communication unless specifically designated by the Customer in the Form: </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">(a) Telephonic communication over a dedicated telephone line(s) routed through centralized call recording system; (b)Email/SMS/Fax/Letter on the authorized email address/mobile/fax/address of the Securities Brokers; </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">(c) Verbal orders placed through personal appearance in the registered office subject to receipt of written acknowledgement of such in-person orders by Securities Brokers. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">5. The Securities Broker shall make out the Contract Note (physical or electronic form) to the Customers in respect of trades executed on their behalf based on their order instructions not later than the start of next trading day as required under the Securities Brokers (Licensing and Operations) Regulations, 2016 through any of the following acceptable modes of communication unless specifically designated by the Customer in the Form: </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">(a) Recognized courier service;</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> (b)Registered Post at given correspondence address; </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">(c) Facsimile number provided on the Form;</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> (d)By hand subject to receipt/acknowledgement; or</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> (e) Email provided on the Form in case of Electronic Contract Note. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">All such transactions recorded by the Securities Broker in the prescribed manner shall be conclusive and binding upon the Customer unless the Customer raises observation relating to unauthorized execution of such transaction or any error in the Contract Note within one trading day of the receipt of such Contract Note. In the event of any dispute relating to order placement or executing of orders, the burden of proof shall be on the Securities Brokers to establish the authenticity of such order placement or execution thereof.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> 6. In case the Customer fails to deposit additional margins within one trading day of the margin call (in writing), the Securities Broker shall have absolute discretion to liquidate the Customer’s outstanding positions including the securities purchased and carried in such account to meet the margin shortfall without further notice to the Customer.</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">&nbsp;</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">7. The Securities Broker shall be responsible for the payment of any credit cash balance available in the account of the Customer through cross cheques or other banking channels (instruments) only within one (1) trading day of the request of the Customer subject to the maintenance of the margin requirements.</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">&nbsp;</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">8. The Customer is aware that in the event of his/her non- payment on settlement day against securities bought on his/her account, the Securities Broker may transfer such securities to its Collateral Account under intimation to PSX in the manner as provided in PSX Regulations. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">9. The Securities Broker shall accept from the Customer payments through "A/c Payee Only" crossed cheque, bank drafts, pay orders or other banking channels drawn on Customer’s own bank account in case of amounts in excess of Rs. 25,000/-. Electronic transfer of funds to the Securities Broker through banks would be regarded as good as cheque. The Securities Broker shall provide the receipt to the Customer(s) in the name of the Customers duly signed by its authorized employee and the Customer(s) shall be responsible to obtain the receipt thereof. In case of cash dealings, proper receipt will be taken and given to the Customer(s), specifically mentioning if payment is for margin or the purchase of securities. The Securities Broker shall immediately deposit in its bank account all cash received in whole i.e. no payments shall be made from the cash received from clients. However, in exceptional circumstances, where it becomes necessary for Securities Broker to accept cash in excess of Rs.25,000/-, the Securities Broker shall immediately report within one trading day such instances with rationale thereof to the PSX in accordance with the mechanism prescribed by PSX. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">10. The Securities Brokers shall make all payments to the Customers through crossed cheques / bank drafts / pay orders or any other banking channels showing payment of amount from their business bank account. Copies of these payment instruments including cheques, pay orders, demand drafts and online instructions shall be kept in record for a minimum period prescribed under the Securities Brokers (Licensing and Operations) Regulations, 2016. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">11. The Securities Broker shall provide to the Customers a quarterly Account Statement which shall include cash and securities ledgers as back office and CDC Sub-Account records along with reconciliation of any differences therein through any of the aforesaid modes of communication. In case of any discrepancy in the ledger statement, the Customer shall inform the Securities Broker within seven (7) days of receipt of the quarterly account statement to remove such discrepancy. Further, the Securities Broker shall provide to a Customer an Account Statement for a period specified by the Customer as and when requested by such Customer. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">12. The Customer shall pay all applicable taxes and statutory and regulatory fee and levies and brokerage commissions as are prevailing from time to time in connection with the brokerage services rendered. The Securities Broker/Participant can debit up to the accrued amount of levies and charges the account of the Customers for the abovementioned charges, which shall be clearly detailed in the ledger statement/daily confirmations. Any change resulting in an increase in the brokerage commission shall take effect not earlier than five (5) trading days of intimation of the same to the Customers through acceptable mode of communication prescribed in the Form. </span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">13. The Securities Broker shall append a Risk Disclosure Document with this Form in accordance with the specimen provided by PSX.&nbsp; </span></p></div>
+<div id="wb_Text47" style="position:absolute;left:4px;top:5142px;width:848px;height:191px;z-index:338;">
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">I/We, the undersigned Applicant(s), hereby declare/undertake that: </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">a) I/We am/are not minor(s); </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">b) I/We am/are of sound mind; </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">c) I/We have not applied to be adjudicated as an insolvent and that I/We have not suspended payment to any financial institution and that I/We have not compounded with my/our creditors; </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">d) I/We am/are not an undischarged insolvent; </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">e) I/We confirm having read and understood the above Terms and Conditions and I/We hereby unconditionally and irrevocably agree and undertake to be bound by and to comply with the above Terms and Conditions and any other terms and conditions which may be notified from time to time with the approval of the concerned authorities modifying or substituting all or any of the above Terms and Conditions in connection with the opening, maintenance and operation of the Sub-Account / Trading Account, as the case may be;</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> f) The information furnished in this form is complete, valid, true and correct to the best of my/our knowledge and I/We shall inform the Securities Broker/Participant immediately in writing of any change therein;</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> g) In case any of the above information is found to be false or misleading or suspension of any material fact, will render my/our Sub-Account/Trading Account, as the case may be, liable for termination and I/We shall be subject to further action under the law; </span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">h) All the documents filed/submitted by me/us for the purpose of this application are genuine and valid, bearing genuine signatures and stamps of duly authorized individuals/representatives and are in accordance with the applicable law; and</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;"> i) I/We hereby now apply for opening, maintaining, operation of /Sub-Account/Trading Account, as the case may be, with the Participant/TREC Holder. </span></p></div>
+<table style="position:absolute;left:0px;top:5350px;width:856px;height:18px;z-index:339;" id="Table61">
+<tr>
+<td class="cell0"><p style="font-weight:bold;color:#000000;"><span style="color:#000000;">DISCLAIMER FOR CDC ACCESS SERVICES </span></p></td>
+</tr>
+</table>
+<div id="wb_Text48" style="position:absolute;left:0px;top:5373px;width:862px;height:155px;z-index:340;">
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">The main objective of providing information, reports and account maintenance services through the Interactive Voice Response System, Internet /Web access and Short Messaging Service (“SMS”) or any other value added service is to facilitate the /Sub-Account Holders (“Users”) with a more modern way to access their information. CDC makes no other warranty of the IVR, Internet /Web access, SMS or any other value added services and Users hereby unconditionally agree that they shall make use of the internet/web access subject to all hazards and circumstances as exist with the use of the internet. CDC shall not be liable to any Users for providing and making available such services and for failure or delay in</span></p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">the provision of SMS to Users and all Users, who use the IVR, internet access, SMS or any other value added services, shall be deemed to have indemnified CDC, its directors, officers and employees for the time being in office and held them harmless from and against any losses, damages, costs and expenses incurred or suffered by them as consequence of use of the IVR system, internet/web access, SMS or any other value added services.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">All Users hereby warrant and agree that their access of the internet /web by the use of a User-ID and login is an advanced electronic signature and upon issuance of such User-ID to the user, they hereby waive any right to raise any objection to the compliance of the User-ID and login with the criteria of an advance electronic signature.</span></p>
+<p style="font-size:11px;line-height:12px;">&nbsp;</p>
+<p style="font-size:11px;line-height:12px;color:#000000;"><span style="color:#000000;">All Users shall by signing this Form and by their conduct of accessing the IVR, internet/Web access, SMS or any other value added services agree to all the terms and conditions and terms of use as shall appear on the CDC website at www.cdcaccess.com.pk which shall be deemed to have been read and agreed to by the Users before signing this form. </span></p></div>
+<input type="submit" id="Button1" onclick="myFunction()" name="" value="Submit" style="position:absolute;left:374px;top:5654px;width:96px;height:25px;z-index:341;">
+<!-- Export To PDF -->
+<input type="submit" id="Button1" name="" value="Export to PDF" style="position:absolute;left:250px;top:5654px;width:96px;height:25px;z-index:341;">
+<div id="wb_Text49" style="position:absolute;left:0px;top:5538px;width:62px;height:15px;z-index:342;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">Signature</span></p></div>
+<div id="wb_Text50" style="position:absolute;left:0px;top:5574px;width:107px;height:15px;z-index:343;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">Main Applicant </span></p></div>
+<div id="wb_Text51" style="position:absolute;left:139px;top:5574px;width:107px;height:15px;z-index:344;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">Joint Applicant 1 </span></p></div>
+<div id="wb_Text52" style="position:absolute;left:304px;top:5574px;width:107px;height:15px;z-index:345;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">Joint Applicant 2 </span></p></div>
+<div id="wb_Text53" style="position:absolute;left:486px;top:5574px;width:107px;height:15px;z-index:346;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">Joint Applicant 3</span></p></div>
+<div id="wb_Text54" style="position:absolute;left:0px;top:5632px;width:107px;height:15px;z-index:347;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">______________</span></p></div>
+<div id="wb_Text55" style="position:absolute;left:136px;top:5632px;width:107px;height:15px;z-index:348;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">______________</span></p></div>
+<div id="wb_Text56" style="position:absolute;left:304px;top:5632px;width:107px;height:15px;z-index:349;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">______________</span></p></div>
+<div id="wb_Text57" style="position:absolute;left:480px;top:5632px;width:107px;height:15px;z-index:350;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">______________</span></p></div>
+<div id="wb_Text58" style="position:absolute;left:618px;top:5574px;width:176px;height:15px;z-index:351;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">Zafar Securities (PVT). LTD</span></p></div>
+<div id="wb_Text59" style="position:absolute;left:666px;top:5632px;width:107px;height:15px;z-index:352;">
+<p style="font-weight:bold;color:#000000;"><span style="color:#000000;">______________</span></p></div>
+</form>
+</div>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb15.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250"></a>
+<div id="wb_Text23" style="position:absolute;left:0px;top:691px;width:846px;height:36px;text-align:justify;z-index:435;">
+<p style="margin:0px 17.53px 0px 0px;font-family:Arial;font-size:9.3px;line-height:11px;"><span style="font-family:Times New Roman;">*Where the Contact Person is resident, local mobile number shall be provided for the purpose of subscription to SMS as a mandatory requirement. Where the Contact Person is a non-resident, email address shall be provided for eAlert/eStatement from CDC as a mandatory requirement. In case the Contact Person is an Attorney, the Attorney shall receive such services. This information will also be used where any other service is subscribed under the CDC access. </span></p></div>
+<table style="position:absolute;left:455px;top:1314px;width:390px;height:71px;z-index:436;" id="Table28">
+<tr>
+<td class="cell0"><div id="wb_Checkbox53" style="display:inline-block;width:18px;height:16px;z-index:367;">
+<input type="checkbox" id="Checkbox53" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox53"></label>
+</div>
+</td>
+<td class="cell1"><p style="font-weight:bold;color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Spouse</span></p></td>
+<td class="cell2"><div id="wb_Checkbox56" style="display:inline-block;width:18px;height:16px;z-index:368;">
+<input type="checkbox" id="Checkbox56" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox56"></label>
+</div>
+</td>
+<td class="cell3"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Father</span></p></td>
+<td class="cell4"><div id="wb_Checkbox58" style="display:inline-block;width:18px;height:16px;z-index:369;">
+<input type="checkbox" id="Checkbox58" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox58"></label>
+</div>
+</td>
+<td class="cell5"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Mother</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><div id="wb_Checkbox54" style="display:inline-block;width:18px;height:16px;z-index:370;">
+<input type="checkbox" id="Checkbox54" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox54"></label>
+</div>
+</td>
+<td class="cell1"><p style="font-weight:bold;color:#000000;"><span style="color:#000000;">&nbsp;</span><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Brother</span></p></td>
+<td class="cell2"><div id="wb_Checkbox57" style="display:inline-block;width:18px;height:16px;z-index:371;">
+<input type="checkbox" id="Checkbox57" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox57"></label>
+</div>
+</td>
+<td class="cell3"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Sister</span></p></td>
+<td class="cell4"><div id="wb_Checkbox59" style="display:inline-block;width:18px;height:16px;z-index:372;">
+<input type="checkbox" id="Checkbox59" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox59"></label>
+</div>
+</td>
+<td class="cell5"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Son</span></p></td>
+</tr>
+<tr>
+<td class="cell0"><div id="wb_Checkbox55" style="display:inline-block;width:18px;height:16px;z-index:373;">
+<input type="checkbox" id="Checkbox55" name="Checkbox1" value="on" style="display:inline-block;"><label for="Checkbox55"></label>
+</div>
+</td>
+<td class="cell6"><p style="font-family:Arial;font-weight:bold;"><span style="font-family:Times New Roman;font-size:11px;line-height:11.5px;">Daughter</span></p></td>
+<td class="cell7"><p>&nbsp;</p></td>
+<td colspan="3" class="cell8"><p>&nbsp;</p></td>
+</tr>
+</table>
+<table style="position:absolute;left:1px;top:164px;width:306px;height:26px;z-index:437;" id="Table5">
+<tr>
+<td class="cell0"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span><span style="color:#000000;font-family:'Times New Roman';font-size:9.3px;"><strong>Nature of Account</strong></span></td>
+<td class="cell1"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span><span style="color:#000000;font-family:'Times New Roman';font-size:11px;"><strong>Single</strong></span></td>
+<td class="cell2"><div id="wb_Checkbox2" style="display:inline-block;width:12px;height:14px;z-index:425;">
+<input type="checkbox" id="Checkbox2" name="Checkbox1" value="on" style="display:inline-block;" autofocus><label for="Checkbox2"></label>
+</div>
+</td>
+<td class="cell3"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span><span style="color:#000000;font-family:'Times New Roman';font-size:11px;"><strong>Joint</strong></span></td>
+<td class="cell4"><div id="wb_Checkbox3" style="display:inline-block;width:12px;height:14px;z-index:426;">
+<input type="checkbox" id="Checkbox3" name="Checkbox1" value="on" style="display:inline-block;" autofocus><label for="Checkbox3"></label>
+</div>
+</td>
+</tr>
+</table>
+<table style="position:absolute;left:0px;top:5121px;width:856px;height:18px;z-index:438;" id="Table57">
+<tr>
+<td class="cell0"><p style="color:#000000;"><span style="font-weight:bold;color:#000000;">DECLARATION &amp; UNDERTAKING</span></p></td>
+</tr>
+</table>
+</body>
+</html>
