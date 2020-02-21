@@ -1,12 +1,12 @@
 # Express.js and EJS
 
-Example of using Node.js, Express.js and EJS.
+Example of using Node.js, Express.js and EJS in Mailing Server.
 
 ### Endpoints
 
 + `/`
-+ `/student`
-+ `/teacher`
++ `/mail`
++ `/mail/send`
 
 ## Install
 
@@ -14,8 +14,15 @@ Example of using Node.js, Express.js and EJS.
 
 ## Run
 
-1. `npm start`
+1. `npm run dev`
 2. Open `http://localhost:8080` in a web browser.
+
+### Structure
++ `Routes`
++ `Controller`
++ `middleware`
++ `config`
+
 
 ## References
 
