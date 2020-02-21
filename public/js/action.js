@@ -6,7 +6,7 @@ const CallAjax = (options, cb) => {
                     "Content-Type": "application/x-www-form-urlencoded"
                 },
                 url: '',
-                data: "userId=12345&userName=test",
+                data: options.body,
                 success: function (data) {
                     cb(null, data);
                 },
@@ -25,7 +25,12 @@ const CallAjax = (options, cb) => {
         xhttp.send(); */
     }
     $('#btn-send-mail').on('click', () => {
-        CallAjax({ url: 'send/mail', type: 'POST' }, (err, result) => {
+        let AOF_Form = $('#id-aof-form');
+        let formData = new FormData(AOF_Form[0]);
+        for(key in formData) {
+            console.log(key);
+        }
+        CallAjax({ url: 'send/mail', type: 'POST',body:formData }, (err, result) => {
             if (err) {
                 console.log(err);
                 return false;

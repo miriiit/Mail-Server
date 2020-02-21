@@ -15,8 +15,8 @@ module.exports = {
       whiteListOrigins :['localhost:4001'],
       mailHost:'smtp.gmail.com',
       mailPort:'587',
-      mailUser:'     -- mail -- here -- ',
-      mailPassword:' -- mail -- password --'
+      mailUser:'',
+      mailPassword:''
 };
 
 const auth = {login: 'yourlogin', password: 'yourpassword'} // change this

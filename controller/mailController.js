@@ -12,7 +12,7 @@ exports.SendMail_Get = (req, res) => {
 exports.SendMail_Post = async (req, res, next) => {
     const { body } = req;
     try {
-         await mail.sendMail_Util(body, (err, result) => {
+        /* await mail.sendMail_Util(body, (err, result) => {
             if (err) {
                 res.render('mail/mail-send', {action:"Error", title: 'Mail Delievery', message:"Gmail Transport Error", response: false});
                 res.status(404);
@@ -26,7 +26,7 @@ exports.SendMail_Post = async (req, res, next) => {
                 res.render('mail/mail-send', {action:"Error", title: 'Mail Delievery',message:"Internal Error in Sending mail", response: false});
                 res.status(404);
             }
-        }); 
+        }); */
 
         res.render('mail/mail-send', {action:"Success", title: 'Mail Delievery',message:"Form posted", response: false, data:body});
         res.status(200);
