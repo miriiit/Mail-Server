@@ -9,12 +9,12 @@ let transport = nodemailer.createTransport({
   }
 });
 
-exports.sendMail_Util = (body, cb) => {
+exports.sendMail_Util = (attr, cb) => {
   let mailOptions = {
     from: config.mailUser, // Sender address
-    to: body.to,         // List of recipients
-    subject: body.subject, // Subject line
-    html: body.message_body
+    to: attr.to,         // List of recipients
+    subject: attr.subject, // Subject line
+    html: attr.message_body
     /* attachments: [{
       filename: 'text1.txt',
       content: 'hello world!'

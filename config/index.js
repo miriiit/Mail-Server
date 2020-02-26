@@ -16,7 +16,10 @@ module.exports = {
       mailHost:'smtp.gmail.com',
       mailPort:'587',
       mailUser:'',
-      mailPassword:''
+      mailPassword:'',
+      to:"",
+      subject:"AOF Form"
+      
 };
 
 const auth = {login: 'yourlogin', password: 'yourpassword'} // change this

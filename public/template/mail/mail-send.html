@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Example</title>
-    <meta name="generator" content="WYSIWYG Web Builder 15 Trial Version - http://www.wysiwygwebbuilder.com">
-    <link href="/css/Final_zafar.css" rel="stylesheet">
-    <link href="/css/index.css" rel="stylesheet">
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <div class="height:50px; width:100%; border:2px solid #eee; border-radius:5px; color:#343434;position:absolute;">
-        <h2 style="position:absolute !important; z-index:99999;"><%= message %></h2>
-    </div>
-
-    <div id="wb_Form1" class="page-container">
+<div id="wb_Form1" class="page-container">
         <div class="page-content">
            <form name="aof-form" id="id-aof-form"  method="post" action="" enctype="multipart/form-data" id="aof-form" style="position:relative;">
               <table style="position:absolute;left:164px;top:51px;width:301px;height:47px;z-index:31;" id="Table1">
@@ -73,31 +55,31 @@
                  <tr>
                     <td class="cell1"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> Application
                              Form No.</strong></span></td>
-                    <td class="cell2"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span>
-                     <input type="hidden" value="068" name="input-application-form-no" />
+                    <td class="cell2"><span style="color:#000000;font-family:Arial;font-size:13px;"> #input-application-form-no# </span>
+                     <input type="hidden" value="068" name="input-application-form-no" value="#input-application-form-no#"/>
                   </td>
                  </tr>
                  <tr>
                     <td class="cell3"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> TRE
                              Certificate
                              No</strong></span></td>
-                    <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:11px;"> 068</span>
-                     <input type="hidden" value="068" name="input-certificate-no" />
+                    <td class="cell4"><span style="color:#000000;font-family:Arial;font-size:11px;"> #input-certificate-no# </span>
+                     <input type="hidden" value="068" name="input-certificate-no" value="#input-certificate-no#" />
                   </td>
                  </tr>
                  <tr>
                     <td class="cell5"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> Securities
                              Broker Registration No.</strong></span></td>
-                    <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;"> BRL-11</span>
-                     <input type="hidden" value="BRL-11" name="input-broker-no" />
+                    <td class="cell6"><span style="color:#000000;font-family:Arial;font-size:13px;"> #input-broker-no# </span>
+                     <input type="hidden" value="BRL-11" name="input-broker-no" value="#input-broker-no#"/>
                   </td>
                  </tr>
                  <tr>
                     <td class="cell1"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> CDS
                              Participant
                              ID</strong></span></td>
-                    <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;"> 03244</span>
-                     <input type="hidden" value="03244" name="input-cds-participant-no" /></td>
+                    <td class="cell7"><span style="color:#000000;font-family:Arial;font-size:13px;"> #input-cds-participant-no# </span>
+                     <input type="hidden" value="03244" name="input-cds-participant-no" value="#input-cds-participant-no#"/></td>
                  </tr>
                  <tr>
                     <td class="cell1"><span style="color:#000000;font-family:Arial;font-size:9.3px;"><strong> Sub-Account
@@ -127,17 +109,17 @@
                              style="color:#000000;font-family:'Times New Roman';font-size:11px;"><strong>Single</strong></span>
                        </td>
                        <td class="cell2">
-                        <div id="wb_Checkbox2" style="display:inline-block;width:12px;height:14px;z-index:410;">
-                           <input type="radio" id="Checkbox2" name="radio-noa" value="single" style="display:inline-block;">
-                        </div>
-                     </td>
-                     <td class="cell3"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span><span
-                           style="color:#000000;font-family:'Times New Roman';font-size:11px;"><strong>Joint</strong></span></td>
-                     <td class="cell4">
-                        <div id="wb_Checkbox3" style="display:inline-block;width:12px;height:14px;z-index:426;">
-                           <input type="radio" id="Checkbox3" name="radio-noa" value="joint" style="display:inline-block;">
-                        </div>
-                     </td>
+                          <div id="wb_Checkbox2" style="display:inline-block;width:12px;height:14px;z-index:410;">
+                             <input type="radio" id="Checkbox2" name="radio-noa" checked="#single#" style="display:inline-block;" autofocus>
+                          </div>
+                       </td>
+                       <td class="cell3"><span style="color:#000000;font-family:Arial;font-size:13px;"> </span><span
+                             style="color:#000000;font-family:'Times New Roman';font-size:11px;"><strong>Joint</strong></span></td>
+                       <td class="cell4">
+                          <div id="wb_Checkbox3" style="display:inline-block;width:12px;height:14px;z-index:426;">
+                             <input type="radio" id="Checkbox3" name="radio-noa" checked="#joint#" style="display:inline-block;">
+                          </div>
+                       </td>
                     </tr>
                  </table>
                  <span style="color:#000000;font-family:Arial;font-size:11px; position:absolute;left:317px;top:176px;width:289px;height:12px;z-index:38;"><strong>(Please use BLOCK LETTERS to fill
@@ -189,56 +171,56 @@
                  </tr>
               </table>
               <input type="text" id="Editbox1" onkeyup="this.value = this.value.toUpperCase();"
-                 style="position:absolute;left:2px;top:353px;width:825px;height:16px;z-index:45;" name="input-full-name" value=""
+                 style="position:absolute;left:2px;top:353px;width:825px;height:16px;z-index:45;" name="input-full-name" value="#input-full-name#"
                  maxlength="30" tabindex="1" autocomplete="off" spellcheck="false">
               <div id="wb_Checkbox11" style="position:absolute;left:424px;top:276px;width:12px;height:14px;z-index:46;">
                  <input type="checkbox" id="Checkbox11" name="Checkbox1" value="on"
                     style="position:absolute;left:0;top:0;" disabled><label for="Checkbox11"></label></div>
               <input type="TEXT" id="Editbox2" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox3')"
-                 style="position:absolute;left:210px;top:383px;width:25px;height:16px;z-index:52;" name="input-nic-cell-1"
+                 style="position:absolute;left:210px;top:383px;width:25px;height:16px;z-index:52;" name="input-nic-cell-1" value="#input-nic-cell-1#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox3" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox4')"
-                 style="position:absolute;left:250px;top:383px;width:25px;height:16px;z-index:53;" name="input-nic-cell-2"
+                 style="position:absolute;left:250px;top:383px;width:25px;height:16px;z-index:53;" name="input-nic-cell-2" value="#input-nic-cell-2#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox4" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox5')"
-                 style="position:absolute;left:290px;top:383px;width:25px;height:16px;z-index:54;" name="input-nic-cell-3"
+                 style="position:absolute;left:290px;top:383px;width:25px;height:16px;z-index:54;" name="input-nic-cell-3" value="#input-nic-cell-3#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox5" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox6')"
-                 style="position:absolute;left:330px;top:383px;width:25px;height:16px;z-index:55;" name="input-nic-cell-4"
+                 style="position:absolute;left:330px;top:383px;width:25px;height:16px;z-index:55;" name="input-nic-cell-4" value="#input-nic-cell-4#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox6" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox8')"
-                 style="position:absolute;left:370px;top:383px;width:25px;height:16px;z-index:56;" name="input-nic-cell-5"
+                 style="position:absolute;left:370px;top:383px;width:25px;height:16px;z-index:56;" name="input-nic-cell-5" value="#input-nic-cell-5#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox7"
                  style="position:absolute;left:410px;top:383px;width:25px;height:16px;z-index:57;" name="input-nic-cell-dash"
                  value="" maxlength="1" disabled autocomplete="off" spellcheck="false" placeholder="-">
               <input type="TEXT" id="Editbox8" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox9')"
-                 style="position:absolute;left:450px;top:383px;width:25px;height:16px;z-index:58;" name="input-nic-cell-6"
+                 style="position:absolute;left:450px;top:383px;width:25px;height:16px;z-index:58;" name="input-nic-cell-6" value="#input-nic-cell-6#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox9" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox10')"
-                 style="position:absolute;left:490px;top:383px;width:25px;height:16px;z-index:59;" name="input-nic-cell-7"
+                 style="position:absolute;left:490px;top:383px;width:25px;height:16px;z-index:59;" name="input-nic-cell-7" value="#input-nic-cell-7#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox10" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox11')"
-                 style="position:absolute;left:530px;top:383px;width:25px;height:16px;z-index:60;" name="input-nic-cell-8"
+                 style="position:absolute;left:530px;top:383px;width:25px;height:16px;z-index:60;" name="input-nic-cell-8" value="#input-nic-cell-8#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox11" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox12')"
-                 style="position:absolute;left:570px;top:383px;width:25px;height:16px;z-index:61;" name="input-nic-cell-9"
+                 style="position:absolute;left:570px;top:383px;width:25px;height:16px;z-index:61;" name="input-nic-cell-9" value="#input-nic-cell-9#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox12" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox13')"
-                 style="position:absolute;left:610px;top:383px;width:25px;height:16px;z-index:62;" name="input-nic-cell-10"
+                 style="position:absolute;left:610px;top:383px;width:25px;height:16px;z-index:62;" name="input-nic-cell-10" value="#input-nic-cell-10#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox13" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox14')"
                  style="position:absolute;left:650px;top:383px;width:25px;height:16px;z-index:63;" name="input-nic-cell-dash"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox14" onkeypress='validate(event)' onkeyup="moveCursor(this,'Editbox16')"
-                 style="position:absolute;left:690px;top:383px;width:25px;height:16px;z-index:64;" name="input-nic-cell-11"
+                 style="position:absolute;left:690px;top:383px;width:25px;height:16px;z-index:64;" name="input-nic-cell-11" value="#input-nic-cell-11#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <input type="TEXT" id="Editbox15"
                  style="position:absolute;left:730px;top:383px;width:25px;height:16px;z-index:65;" name="input-nic-cell-12"
                  value="" maxlength="1" disabled autocomplete="off" spellcheck="false" placeholder="-">
               <input type="TEXT" id="Editbox16" onkeypress='validate(event)'
                  onkeyup="moveCursor(this,'Editbox16')onkeyup=" moveCursor(this,'Editbox16')"
-                 style="position:absolute;left:770px;top:383px;width:25px;height:16px;z-index:66;" name="input-nic-cell-13"
+                 style="position:absolute;left:770px;top:383px;width:25px;height:16px;z-index:66;" name="input-nic-cell-13" value="#input-nic-cell-13#"
                  value="" maxlength="1" autocomplete="off" spellcheck="false">
               <table style="position:absolute;left:2px;top:414px;width:835px;height:54px;z-index:63;" id="Table7">
                  <tr>
@@ -518,7 +500,7 @@
                  </tr>
               </table>
               <input type="text" id="Editbox48" onkeyup="this.value = this.value.toUpperCase();"
-                 style="position:absolute;left:2px;top:820px;width:825px;height:16px;z-index:124;" name="input-name-joint-applicant-1"
+                 style="position:absolute;left:2px;top:820px;width:825px;height:16px;z-index:124;" name="input-name-joint-applicant-1" value="#input-name-joint-applicant-1#"
                  value="" maxlength="30" tabindex="64" autocomplete="off" spellcheck="false">
               <div id="wb_Text26" style="position:absolute;left:11px;top:846px;width:217px;height:30px;z-index:125;">
                  <p style="color:#000000;"><span style="color:#000000;">1. CNIC&nbsp;&nbsp;&nbsp;&nbsp;
@@ -527,49 +509,49 @@
                        No&nbsp;&nbsp;&nbsp;&nbsp; ARC&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
               </div>
               <input type="number" id="Editbox49"
-                 style="position:absolute;left:211px;top:852px;width:25px;height:16px;z-index:126;" name="input-nic-cell-1-joint-applicant-1"
+                 style="position:absolute;left:211px;top:852px;width:25px;height:16px;z-index:126;" name="input-nic-cell-1-joint-applicant-1" value="#input-nic-cell-1-joint-applicant-1#"
                  value="" maxlength="1" tabindex="71" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox50"
-                 style="position:absolute;left:251px;top:852px;width:25px;height:16px;z-index:127;" name="input-nic-cell-2-joint-applicant-1"
+                 style="position:absolute;left:251px;top:852px;width:25px;height:16px;z-index:127;" name="input-nic-cell-2-joint-applicant-1" value="#input-nic-cell-2-joint-applicant-1#"
                  value="" maxlength="1" tabindex="72" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox51"
-                 style="position:absolute;left:291px;top:852px;width:25px;height:16px;z-index:128;" name="input-nic-cell-3-joint-applicant-1"
+                 style="position:absolute;left:291px;top:852px;width:25px;height:16px;z-index:128;" name="input-nic-cell-3-joint-applicant-1"  value="#input-nic-cell-3-joint-applicant-1#"
                  value="" maxlength="1" tabindex="73" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox52"
-                 style="position:absolute;left:331px;top:852px;width:25px;height:16px;z-index:129;" name="input-nic-cell-4-joint-applicant-1"
+                 style="position:absolute;left:331px;top:852px;width:25px;height:16px;z-index:129;" name="input-nic-cell-4-joint-applicant-1"  value="#input-nic-cell-4-joint-applicant-1#"
                  value="" maxlength="1" tabindex="74" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox53"
-                 style="position:absolute;left:371px;top:852px;width:25px;height:16px;z-index:130;" name="input-nic-cell-5-joint-applicant-1"
+                 style="position:absolute;left:371px;top:852px;width:25px;height:16px;z-index:130;" name="input-nic-cell-5-joint-applicant-1"  value="#input-nic-cell-5-joint-applicant-1#"
                  value="" maxlength="1" tabindex="75" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox54"
-                 style="position:absolute;left:411px;top:852px;width:25px;height:16px;z-index:131;" name="input-nic-cell-dash-joint-applicant-1"
+                 style="position:absolute;left:411px;top:852px;width:25px;height:16px;z-index:131;" name="input-nic-cell-dash-joint-applicant-1"  
                  value="" maxlength="1" tabindex="76" disabled autocomplete="off" spellcheck="false" placeholder="-">
               <input type="number" id="Editbox55"
-                 style="position:absolute;left:451px;top:852px;width:25px;height:16px;z-index:132;" name="input-nic-cell-6-joint-applicant-1"
+                 style="position:absolute;left:451px;top:852px;width:25px;height:16px;z-index:132;" name="input-nic-cell-6-joint-applicant-1"  value="#input-nic-cell-6-joint-applicant-1#"
                  value="" maxlength="1" tabindex="77" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox56"
-                 style="position:absolute;left:491px;top:852px;width:25px;height:16px;z-index:133;" name="input-nic-cell-7-joint-applicant-1"
+                 style="position:absolute;left:491px;top:852px;width:25px;height:16px;z-index:133;" name="input-nic-cell-7-joint-applicant-1"  value="#input-nic-cell-7-joint-applicant-1#"
                  value="" maxlength="1" tabindex="78" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox57"
-                 style="position:absolute;left:531px;top:852px;width:25px;height:16px;z-index:134;" name="input-nic-cell-8-joint-applicant-1"
+                 style="position:absolute;left:531px;top:852px;width:25px;height:16px;z-index:134;" name="input-nic-cell-8-joint-applicant-1"  value="#input-nic-cell-8-joint-applicant-1#"
                  value="" maxlength="1" tabindex="79" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox58"
-                 style="position:absolute;left:571px;top:852px;width:25px;height:16px;z-index:135;" name="input-nic-cell-9-joint-applicant-1"
+                 style="position:absolute;left:571px;top:852px;width:25px;height:16px;z-index:135;" name="input-nic-cell-9-joint-applicant-1"  value="#input-nic-cell-9-joint-applicant-1#"
                  value="" maxlength="1" tabindex="80" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox59"
-                 style="position:absolute;left:611px;top:852px;width:25px;height:16px;z-index:136;" name="input-nic-cell-10-joint-applicant-1"
+                 style="position:absolute;left:611px;top:852px;width:25px;height:16px;z-index:136;" name="input-nic-cell-10-joint-applicant-1"  value="#input-nic-cell-10-joint-applicant-1#"
                  value="" maxlength="1" tabindex="81" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox60"
-                 style="position:absolute;left:651px;top:852px;width:25px;height:16px;z-index:137;" name="input-nic-cell-11-joint-applicant-1"
+                 style="position:absolute;left:651px;top:852px;width:25px;height:16px;z-index:137;" name="input-nic-cell-11-joint-applicant-1"  value="#input-nic-cell-11-joint-applicant-1#"
                  value="" maxlength="1" tabindex="82" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox61"
-                 style="position:absolute;left:691px;top:852px;width:25px;height:16px;z-index:138;" name="input-nic-cell-12-joint-applicant-1"
+                 style="position:absolute;left:691px;top:852px;width:25px;height:16px;z-index:138;" name="input-nic-cell-12-joint-applicant-1"  value="#input-nic-cell-12-joint-applicant-1#"
                  value="" maxlength="1" tabindex="83" autocomplete="off" spellcheck="false">
               <input type="number" id="Editbox62"
                  style="position:absolute;left:731px;top:852px;width:25px;height:16px;z-index:139;" name="input-nic-cell-dash-joint-applicant-1"
                  value="" maxlength="1" tabindex="84" disabled autocomplete="off" spellcheck="false" placeholder="-">
               <input type="number" id="Editbox63"
-                 style="position:absolute;left:802px;top:852px;width:25px;height:16px;z-index:140;" name="input-nic-cell-13-joint-applicant-1"
+                 style="position:absolute;left:802px;top:852px;width:25px;height:16px;z-index:140;" name="input-nic-cell-13-joint-applicant-1"  value="#input-nic-cell-13-joint-applicant-1#"
                  value="" maxlength="1" tabindex="85" autocomplete="off" spellcheck="false">
               <div id="wb_Checkbox28" style="position:absolute;left:60px;top:845px;width:12px;height:14px;z-index:141;">
                  <input type="checkbox" id="Checkbox28" name="checkbox-cnic-joint-applicant-1" value="on"
@@ -2786,8 +2768,3 @@
            </div>
         </div>
   </div>
-</body>
-
-<script type="text/javascript" src="/js/action.js"></script>
-
-</html>

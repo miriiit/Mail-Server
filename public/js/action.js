@@ -26,11 +26,11 @@ const CallAjax = (options, cb) => {
     }
     $('#btn-send-mail').on('click', () => {
         let AOF_Form = $('#id-aof-form');
-        let formData = new FormData(AOF_Form[0]);
-        for(key in formData) {
+        let data = AOF_Form.serialize();
+        /* for(key in json) {
             console.log(key);
-        }
-        CallAjax({ url: 'send/mail', type: 'POST',body:formData }, (err, result) => {
+        } */
+        CallAjax({ url: 'send/mail', type: 'POST',body:data }, (err, result) => {
             if (err) {
                 console.log(err);
                 return false;
