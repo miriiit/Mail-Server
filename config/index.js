@@ -15,9 +15,9 @@ module.exports = {
       whiteListOrigins :['localhost:4001'],
       mailHost:'smtp.gmail.com',
       mailPort:'587',
-      mailUser:'',
+      mailUser:'testemail4imra8n080@gmail.com',
       mailPassword:'',
-      to:"",
+      to:"azhar.hussnain@softech.com.pk",
       subject:"AOF Form"
       
 };

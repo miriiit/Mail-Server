@@ -18,36 +18,33 @@ exports.SendMail_Post = (req, res, next) => {
         fs.readFile('public/template/mail/mail-send.html', 'utf8', async (err, contents) => {
 
             if (err) {
-                res.render('mail/mail-send', { action: "Error", title: 'Parsing Error', message: "Internal Error in Sending mail", response: false });
+                res.send({ action: "Error", title: 'Parsing Error', message: "Internal Error in Sending mail", response: false });
                 res.status(404);
             }
 
             
-            let res = await utility.ReplaceAttr(body, contents);
+            let parsedBody = await utility.ReplaceAttr(body, contents);
             let mailObj= {
                 to: config.to,
                 subject: config.subject,
-                message_body : res
+                message_body : parsedBody
             }
             await mail.sendMail_Util(mailObj, (err, result) => {
                 if (err) {
-                    res.render('mail/mail-send', { action: "Error", title: 'Mail Delievery', message: "Gmail Transport Error", response: false });
+                    res.send({ action: "Error", title: 'Mail Delievery', message: "Gmail Transport Error", response: false });
                     res.status(404);
                     return;
                 }
                 if (result) { // No results.
-                    res.render('mail/mail-send', { action: "Success", title: 'Mail Delievery', message: "Successfully delieved", response: true, size: result.length, data: result });
+                    res.send({ action: "Success", title: 'Mail Delievery', message: "Successfully delieved", response: true, size: result.length, data: result });
                     res.status(200);
                 }
                 else { // No results.
-                    res.render('mail/mail-send', { action: "Error", title: 'Mail Delievery', message: "Internal Error in Sending mail", response: false });
+                    res.send({ action: "Error", title: 'Mail Delievery', message: "Internal Error in Sending mail", response: false });
                     res.status(404);
                 }
             });
-
-
-
-            console.log(contents);
+            //console.log(contents);
             let attr = contents;
         });
     } catch (ex) {
