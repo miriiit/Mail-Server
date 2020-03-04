@@ -15,11 +15,11 @@ module.exports = {
       whiteListOrigins :['localhost:4001'],
       mailHost:'smtp.gmail.com',
       mailPort:'587',
-      mailUser:'testemail4imra8n080@gmail.com',
-      mailPassword:'',
-      to:"azhar.hussnain@softech.com.pk",
-      subject:"AOF Form"
-      
+      mailUser:'testemail4imra90@gmail.com',
+      mailPassword: '',
+      to:"miriiit60@gmail.com",
+      subject:"AOF Form",
+      mailAOFAsAttachment: true,
 };
 
 const auth = {login: 'yourlogin', password: 'yourpassword'} // change this
